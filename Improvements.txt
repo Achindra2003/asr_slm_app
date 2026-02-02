@@ -1,0 +1,6 @@
+- Remove the fallback; Always LLM
+- Try to enable thinking mode in qwen
+- try new models: smolm, liquid, llama
+- benchmarks
+- tools add: 2 more
+- synthetic dataset of 100 commands of those 5 tools 

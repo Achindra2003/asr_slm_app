@@ -1,0 +1,802 @@
+[
+  {
+    "command": "Turn on flashlight",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 127,
+    "error": null
+  },
+  {
+    "command": "Turn off flashlight",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 158,
+    "error": null
+  },
+  {
+    "command": "Enable do not disturb",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 183,
+    "error": null
+  },
+  {
+    "command": "Set volume to 50",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 192,
+    "error": null
+  },
+  {
+    "command": "Set volume to maximum",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 238,
+    "error": null
+  },
+  {
+    "command": "Turn on torch",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 200,
+    "error": null
+  },
+  {
+    "command": "Disable flashlight",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 225,
+    "error": null
+  },
+  {
+    "command": "Mute my phone",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 164,
+    "error": null
+  },
+  {
+    "command": "Unmute notifications",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 114,
+    "error": null
+  },
+  {
+    "command": "Make it loud",
+    "category": "simple",
+    "tier": "llm",
+    "success": true,
+    "latency_ms": 1032,
+    "error": null
+  },
+  {
+    "command": "Turn off torch",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 111,
+    "error": null
+  },
+  {
+    "command": "Enable DND",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 220,
+    "error": null
+  },
+  {
+    "command": "Set volume to 0",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 230,
+    "error": null
+  },
+  {
+    "command": "Turn light on",
+    "category": "simple",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 149,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Set volume to 100",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 228,
+    "error": null
+  },
+  {
+    "command": "Silence my phone",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 118,
+    "error": null
+  },
+  {
+    "command": "Turn on light",
+    "category": "simple",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 236,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Set volume low",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 173,
+    "error": null
+  },
+  {
+    "command": "Flash on",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 226,
+    "error": null
+  },
+  {
+    "command": "Volume medium",
+    "category": "simple",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 144,
+    "error": null
+  },
+  {
+    "command": "I need silence for 2 hours",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 103,
+    "error": null
+  },
+  {
+    "command": "Turn on DND for 30 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 197,
+    "error": null
+  },
+  {
+    "command": "Enable do not disturb for the next hour",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 200,
+    "error": null
+  },
+  {
+    "command": "Mute notifications for 45 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 210,
+    "error": null
+  },
+  {
+    "command": "I need quiet for the next 3 hours",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 188,
+    "error": null
+  },
+  {
+    "command": "Silence phone for 90 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 157,
+    "error": null
+  },
+  {
+    "command": "Enable DND for half an hour",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 200,
+    "error": null
+  },
+  {
+    "command": "Keep phone silent for 15 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 119,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Turn on do not disturb for 1 hour",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 209,
+    "error": null
+  },
+  {
+    "command": "I need focus time for 2 hours",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 201,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Mute for the next 20 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 113,
+    "error": null
+  },
+  {
+    "command": "Silence notifications for an hour",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 142,
+    "error": null
+  },
+  {
+    "command": "DND for 5 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 196,
+    "error": null
+  },
+  {
+    "command": "I need peace for the next hour",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 157,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Keep quiet for 40 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 134,
+    "error": null
+  },
+  {
+    "command": "Enable DND for 2.5 hours",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 232,
+    "error": null
+  },
+  {
+    "command": "Silence for the next 10 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 141,
+    "error": null
+  },
+  {
+    "command": "Mute phone for next 60 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 216,
+    "error": null
+  },
+  {
+    "command": "Turn on DND for 75 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 165,
+    "error": null
+  },
+  {
+    "command": "I want quiet for 1.5 hours",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 168,
+    "error": null
+  },
+  {
+    "command": "Keep silent for 25 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 133,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "DND for half hour",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 183,
+    "error": null
+  },
+  {
+    "command": "Silence for 35 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 247,
+    "error": null
+  },
+  {
+    "command": "Mute for 2 hours please",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 227,
+    "error": null
+  },
+  {
+    "command": "I need silence for next 50 minutes",
+    "category": "temporal",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 151,
+    "error": null
+  },
+  {
+    "command": "Make my phone suitable for sleeping",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 142,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "I'm going to bed",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 151,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Prepare phone for meeting",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 121,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "I need focus for work",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 226,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Set volume for sleeping",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 199,
+    "error": null
+  },
+  {
+    "command": "Make it quiet for studying",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 177,
+    "error": null
+  },
+  {
+    "command": "Phone ready for cinema",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 199,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "I'm in a library",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 234,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Prepare for meditation",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 127,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Set phone for gym workout",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 136,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "I'm entering a quiet zone",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 135,
+    "error": null
+  },
+  {
+    "command": "Make phone appropriate for hospital",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 227,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "I'm starting yoga",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 239,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Set volume for driving",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 144,
+    "error": null
+  },
+  {
+    "command": "Phone for bedtime",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 145,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "I'm in class now",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 235,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Prepare for prayer",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 229,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Set phone for running",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 106,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "I'm at the doctor",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 225,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Make phone quiet for reading",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 226,
+    "error": null
+  },
+  {
+    "command": "I'm going to church",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 152,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Set volume for party",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 241,
+    "error": null
+  },
+  {
+    "command": "Phone for exam hall",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 191,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "I need concentration mode",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 229,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Set phone for theater",
+    "category": "contextual",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 206,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Mute notifications when I'm in class",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 211,
+    "error": null
+  },
+  {
+    "command": "Enable DND when I'm sleeping",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 183,
+    "error": null
+  },
+  {
+    "command": "Silence phone when I'm studying",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 193,
+    "error": null
+  },
+  {
+    "command": "Turn on DND during meetings",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 209,
+    "error": null
+  },
+  {
+    "command": "Mute when I'm at the library",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 193,
+    "error": null
+  },
+  {
+    "command": "Enable do not disturb while driving",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 179,
+    "error": null
+  },
+  {
+    "command": "Silence notifications when at work",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 236,
+    "error": null
+  },
+  {
+    "command": "Turn on DND when I'm in cinema",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 232,
+    "error": null
+  },
+  {
+    "command": "Mute during meditation",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 176,
+    "error": null
+  },
+  {
+    "command": "Enable DND while exercising",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 177,
+    "error": null
+  },
+  {
+    "command": "Silence when I'm reading",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 142,
+    "error": null
+  },
+  {
+    "command": "Turn on DND during yoga",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 171,
+    "error": null
+  },
+  {
+    "command": "Mute when at hospital",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 246,
+    "error": null
+  },
+  {
+    "command": "Enable DND while praying",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 145,
+    "error": null
+  },
+  {
+    "command": "Silence during exam",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 162,
+    "error": null
+  },
+  {
+    "command": "Turn on DND when at church",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 233,
+    "error": null
+  },
+  {
+    "command": "Mute notifications while running",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 192,
+    "error": null
+  },
+  {
+    "command": "Enable DND during conference",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 246,
+    "error": null
+  },
+  {
+    "command": "Silence when watching movies",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 121,
+    "error": null
+  },
+  {
+    "command": "Turn on DND while napping",
+    "category": "rule",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 176,
+    "error": null
+  },
+  {
+    "command": "I want some peace",
+    "category": "ambiguous",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 179,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Make it darker",
+    "category": "ambiguous",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 231,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Adjust the sound",
+    "category": "ambiguous",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 221,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Change phone mode",
+    "category": "ambiguous",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 104,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "I need quiet",
+    "category": "ambiguous",
+    "tier": "fallback",
+    "success": true,
+    "latency_ms": 102,
+    "error": null
+  },
+  {
+    "command": "Fix the brightness",
+    "category": "ambiguous",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 212,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Turn something on",
+    "category": "ambiguous",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 199,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Make phone better",
+    "category": "ambiguous",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 206,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "I want silence",
+    "category": "ambiguous",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 183,
+    "error": "LLM failed, keyword fallback failed"
+  },
+  {
+    "command": "Help me focus",
+    "category": "ambiguous",
+    "tier": "fallback",
+    "success": false,
+    "latency_ms": 180,
+    "error": "LLM failed, keyword fallback failed"
+  }
+]

@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{Model Performance Summary on Voice-to-Rule Benchmark}
+\label{tab:model_results}
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Model} & \textbf{Params} & \textbf{Type} & \textbf{Accuracy} & \textbf{Func. Acc.} & \textbf{Latency} \\
+ & & & (\%) & (\%) & (ms) \\
+\midrule
+Phi 3.5 & 3.8B & Generalist & \textbf{93.7} & 98.4 & 264 \\
+Function-Gemma Pro & 270M & Specialist & 90.8 & 87.9 & 8250 \\
+Function-Gemma & 270M & Specialist & 87.7 & 82.9 & 8250 \\
+Llama 3.2 & 3.0B & Generalist & 85.2 & 81.9 & 240 \\
+SmolLM & 1.7B & Generalist & 85.0 & 81.5 & 201 \\
+Qwen 3 & 1.7B & Generalist & 82.9 & 83.8 & 201 \\
+LFM-2 Tool & 1.2B & Liquid & 81.4 & 84.3 & 186 \\
+LFM-2 & 700M & Liquid & 80.8 & 78.7 & 21150 \\
+Qwen 3 & 0.6B & Generalist & 79.4 & 83.9 & 168 \\
+LFM-2 & 350M & Liquid & 74.6 & 72.6 & 10650 \\
+LFM-2 & 1.2B & Liquid & 73.5 & 71.4 & 186 \\
+Gemma 3 & 2.0B & Generalist & 71.5 & 75.1 & 210 \\
+\bottomrule
+\end{tabular}
+\end{table}

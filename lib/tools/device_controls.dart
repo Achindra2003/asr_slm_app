@@ -48,4 +48,69 @@ class DeviceControls {
       return false;
     }
   }
+
+  static Future<bool> setScreenBrightness({
+    required int brightnessPercent,
+  }) async {
+    try {
+      final bool result = await _channel.invokeMethod('setScreenBrightness', {
+        'brightnessPercent': brightnessPercent,
+      });
+      return result;
+    } on PlatformException catch (e) {
+      print('Failed to set brightness: ${e.message}');
+      return false;
+    }
+  }
+
+  static Future<bool> toggleWifi({required bool enable}) async {
+    try {
+      final bool result = await _channel.invokeMethod('toggleWifi', {
+        'enable': enable,
+      });
+      return result;
+    } on PlatformException catch (e) {
+      print('Failed to toggle wifi: ${e.message}');
+      return false;
+    }
+  }
+
+  /// Set a timer/alarm for specified minutes from now
+  static Future<bool> setTimer({required int minutes}) async {
+    try {
+      final bool result = await _channel.invokeMethod('setTimer', {
+        'minutes': minutes,
+      });
+      return result;
+    } on PlatformException catch (e) {
+      print('Failed to set timer: ${e.message}');
+      return false;
+    }
+  }
+
+  /// Toggle Bluetooth on/off
+  static Future<bool> toggleBluetooth({required bool enable}) async {
+    try {
+      final bool result = await _channel.invokeMethod('toggleBluetooth', {
+        'enable': enable,
+      });
+      return result;
+    } on PlatformException catch (e) {
+      print('Failed to toggle bluetooth: ${e.message}');
+      return false;
+    }
+  }
+
+  /// Toggle Airplane mode on/off
+  static Future<bool> toggleAirplaneMode({required bool enable}) async {
+    try {
+      final bool result = await _channel.invokeMethod('toggleAirplaneMode', {
+        'enable': enable,
+      });
+      return result;
+    } on PlatformException catch (e) {
+      print('Failed to toggle airplane mode: ${e.message}');
+      return false;
+    }
+  }
 }

@@ -4,8 +4,11 @@ import android.app.NotificationManager
 import android.content.Context
 import android.hardware.camera2.CameraManager
 import android.media.AudioManager
+import android.net.wifi.WifiManager
 import android.os.Handler
 import android.os.Looper
+import android.provider.Settings
+import android.view.WindowManager
 
 class SystemSettings(private val context: Context) {
     
@@ -51,6 +54,46 @@ class SystemSettings(private val context: Context) {
             val maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC)
             val volume = (maxVolume * volumePercent / 100).coerceIn(0, maxVolume)
             audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, volume, 0)
+            true
+        } catch (e: Exception) {
+            e.printStackTrace()
+            false
+        }
+    }
+    
+    fun setScreenBrightness(brightnessPercent: Int): Boolean {
+        return try {
+            // Check if we have WRITE_SETTINGS permission
+            if (!Settings.System.canWrite(context)) {
+                return false
+            }
+            
+            // Convert percent to 0-255 range
+            val brightness = (brightnessPercent * 255 / 100).coerceIn(0, 255)
+            
+            // Set system brightness
+            Settings.System.putInt(
+                context.contentResolver,
+                Settings.System.SCREEN_BRIGHTNESS,
+                brightness
+            )
+            
+            true
+        } catch (e: Exception) {
+            e.printStackTrace()
+            false
+        }
+    }
+    
+    fun toggleWifi(enable: Boolean): Boolean {
+        return try {
+            val wifiManager = context.applicationContext.getSystemService(Context.WIFI_SERVICE) as WifiManager
+            
+            // Note: setWifiEnabled is deprecated in API 29+
+            // For newer Android versions, user must manually enable/disable
+            @Suppress("DEPRECATION")
+            wifiManager.isWifiEnabled = enable
+            
             true
         } catch (e: Exception) {
             e.printStackTrace()

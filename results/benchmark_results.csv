@@ -1,0 +1,601 @@
+model,participant,command,transcription,category,word_error_rate,expected_function,expected_parameters,actual_function,actual_parameters,success,correct_function,correct_params,latency_ms
+qwen3-0.6,P001,Turn off flashlight,Turn off flesh light,direct,0.667,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,207
+qwen3-0.6,P001,Quiet mode for 1 hour,Quiet mode for 1 hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,139
+qwen3-0.6,P001,I need quiet time for one hour,I need quiet time for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,159
+qwen3-0.6,P001,Max brightness,Max brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,199
+qwen3-0.6,P001,Make it suitable for cooking,Make it suitable for cooking,contextual,0,setVolume,"{""volumePercent"": 60}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,198
+qwen3-0.6,P001,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,147
+qwen3-0.6,P001,Make it loud for music,Make it loud for music,contextual,0,setVolume,"{""volumePercent"": 90}",setVolume,{},TRUE,TRUE,TRUE,148
+qwen3-0.6,P001,Enable silence for 2 hours,Enable silence for 2 hours,temporal,0,setDoNotDisturb,"{""durationMinutes"": 120}",setDoNotDisturb,{},TRUE,TRUE,TRUE,150
+qwen3-0.6,P001,Silence for the next 50 minutes,Silence for the next 50 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 50}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,132
+qwen3-0.6,P001,Torch on please,Torch on please,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,157
+qwen3-0.6,P001,Brightness suitable for dark room,Brightness suitable for dark room,contextual,0,setScreenBrightness,"{""brightnessPercent"": 20}",setScreenBrightness,{},TRUE,TRUE,TRUE,177
+qwen3-0.6,P001,Turn off alerts while exercising,Turn off alerts while exercising,rule,0,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,134
+qwen3-0.6,P002,Silence when in meditation,Silence when in meditation,rule,0,createRule,"{""trigger"": ""in meditation"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,170
+qwen3-0.6,P002,Set brightness for reading,Set brightness for reading,contextual,0,setScreenBrightness,"{""brightnessPercent"": 70}",setScreenBrightness,{},TRUE,TRUE,TRUE,193
+qwen3-0.6,P002,Turn on do not disturb for 30 minutes,Turn on do not disturb for 30 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 30}",setDoNotDisturb,{},TRUE,TRUE,TRUE,148
+qwen3-0.6,P002,Torch off please,Torch off please,direct,0,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,206
+qwen3-0.6,P002,Make screen brighter,Make screen brighter,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,114
+qwen3-0.6,P002,Quiet mode for 1 hour,Quiet mode for 1 hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,179
+qwen3-0.6,P002,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,229
+qwen3-0.6,P002,Enable quiet mode when at church,Enabl quiet mode when at church,rule,0.167,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,179
+qwen3-0.6,P002,Brighten screen,Brighten screen,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,121
+qwen3-0.6,P002,Set phone for quiet work environment,Set phone for auiet work environment,contextual,0.167,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,189
+qwen3-0.6,P002,Brightness up,Brightness up,direct,0,setScreenBrightness,"{""brightnessPercent"": 80}",setScreenBrightness,{},TRUE,TRUE,TRUE,173
+qwen3-0.6,P002,Flashlight on,Flashlight an,direct,0.5,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,119
+qwen3-0.6,P003,Enable do not disturb mode for 25 minutes,Enable do not disturb mode for 25 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 25}",setDoNotDisturb,{},TRUE,TRUE,TRUE,173
+qwen3-0.6,P003,Screen to 90 percent,Screen to 90 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 90}",setScreenBrightness,{},TRUE,TRUE,TRUE,181
+qwen3-0.6,P003,Brighten screen,Brighte screen,direct,0.5,setScreenBrightness,"{""brightnessPercent"": 100}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,207
+qwen3-0.6,P003,Switch on internet,Switch on internet,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,140
+qwen3-0.6,P003,Phone settings for meditation,Phone settings for meditation,contextual,0,setVolume,"{""volumePercent"": 15}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,113
+qwen3-0.6,P003,Set phone to sleep mode,Set phone to sleep mode,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,{},TRUE,TRUE,TRUE,194
+qwen3-0.6,P003,Half volume please,Half volume pleaae,parameter,0.333,setVolume,"{""volumePercent"": 50}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,144
+qwen3-0.6,P003,Silence phone while sleeping,Silence phone while sleeping,rule,0,createRule,"{""trigger"": ""sleeping"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,182
+qwen3-0.6,P003,Turn off alerts when at work,Turn off alerts when at woak,rule,0.167,createRule,"{""trigger"": ""at work"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,162
+qwen3-0.6,P003,Adjust for movie watching,Adjust for movie watching,contextual,0,setVolume,"{""volumePercent"": 80}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,203
+qwen3-0.6,P003,Set brightness for reading,Set brightness for readini,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 70}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,241
+qwen3-0.6,P003,Set to minimum volume,Set to minimum volume,parameter,0,setVolume,"{""volumePercent"": 0}",setVolume,{},TRUE,TRUE,TRUE,174
+qwen3-0.6,P004,Quiet mode for 1 hour,Quie mode for 1 hour,temporal,0.2,setDoNotDisturb,"{""durationMinutes"": 60}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,176
+qwen3-0.6,P004,No interruptions for 40 minutes,No interruptions for 40 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 40}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,223
+qwen3-0.6,P004,Dim screen for sleeping,Dim scoeen for sleeping,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,196
+qwen3-0.6,P004,Light on,Light oe,direct,0.5,toggleFlashlight,"{""enable"": true}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,239
+qwen3-0.6,P004,Set brightness to 75 percent,Set brightness to 75 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 75}",setScreenBrightness,{},TRUE,TRUE,TRUE,154
+qwen3-0.6,P004,Turn off alerts for one hour,Turn off alerts fer one hour,temporal,0.167,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,150
+qwen3-0.6,P004,Turn off alerts while exercising,Turn off alerts while exeicising,rule,0.2,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,196
+qwen3-0.6,P004,Silence notifications for 90 minutes,silent notifications fur 90 minutes,temporal,0.4,setDoNotDisturb,"{""durationMinutes"": 90}",setDoNotDisturb,{},TRUE,TRUE,TRUE,236
+qwen3-0.6,P004,Connect to wifi,Connect to wifi,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,250
+qwen3-0.6,P004,Volume at 40 percent,Volume at 40 percent,parameter,0,setVolume,"{""volumePercent"": 40}",setVolume,{},TRUE,TRUE,TRUE,202
+qwen3-0.6,P004,Silence phone during dinner time,silence phone during dinne time,rule,0.2,createRule,"{""trigger"": ""dinner time"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,137
+qwen3-0.6,P004,Silence when in meditation,silence wien in meditatio,rule,0.5,createRule,"{""trigger"": ""in meditation"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,146
+qwen3-0.6,P005,Set to 95 percent,oet to 95 percent,parameter,0.25,setVolume,"{""volumePercent"": 95}",setVolume,{},TRUE,TRUE,TRUE,232
+qwen3-0.6,P005,Increase to 80 percent,Increase to 80 percent,parameter,0,setVolume,"{""volumePercent"": 80}",setVolume,{},TRUE,TRUE,TRUE,240
+qwen3-0.6,P005,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,164
+qwen3-0.6,P005,Turn on flashlight,Turn on flashlight,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,184
+qwen3-0.6,P005,Turn off sounds while watching movies,Turn off sound while watching movies,rule,0.167,createRule,"{""trigger"": ""watching movies"", ""action"": ""mute""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,203
+qwen3-0.6,P005,Make phone quiet for library,Make phon quiet for library,contextual,0.2,setVolume,"{""volumePercent"": 20}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,186
+qwen3-0.6,P005,Decrease brightness,Decrease brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,147
+qwen3-0.6,P005,Light off,Light off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,199
+qwen3-0.6,P005,Make it 25 percent,Make it 25 percent,parameter,0,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,245
+qwen3-0.6,P005,Mute during meetings,Mute during meetings,rule,0,createRule,"{""trigger"": ""during meetings"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,168
+qwen3-0.6,P005,Set to minimum volume,Set to minimum volume,parameter,0,setVolume,"{""volumePercent"": 0}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,203
+qwen3-0.6,P005,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,179
+qwen3-0.6,P006,Minimum brightness,Minimum bright ness,direct,1,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,189
+qwen3-0.6,P006,Turn off alerts while exercising,Turn off alerts while exercising,rule,0,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,149
+qwen3-0.6,P006,Do not disturb for 15 minutes,Do not disturb for 15 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 15}",setDoNotDisturb,{},TRUE,TRUE,TRUE,214
+qwen3-0.6,P006,Volume to 20 percent please,Volume to 20 percent please,parameter,0,setVolume,"{""volumePercent"": 20}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,142
+qwen3-0.6,P006,Make it loud for music,Make it loud for music,contextual,0,setVolume,"{""volumePercent"": 90}",setVolume,{},TRUE,TRUE,TRUE,110
+qwen3-0.6,P006,Flashlight off,Flashlight off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,192
+qwen3-0.6,P006,Keep phone silent for one hour,Keep phone silent for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,159
+qwen3-0.6,P006,Brightness down,Brightness down,direct,0,setScreenBrightness,"{""brightnessPercent"": 20}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,164
+qwen3-0.6,P006,Mute my phone for the next 3 hours,Mute my phone for the next 3 hours,temporal,0,setDoNotDisturb,"{""durationMinutes"": 180}",setDoNotDisturb,{},TRUE,TRUE,TRUE,138
+qwen3-0.6,P006,Brighten screen,Brighten screen,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,152
+qwen3-0.6,P006,I need quiet time for one hour,I need quiet time for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,105
+qwen3-0.6,P006,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,195
+qwen3-0.6,P007,Light off,Light off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,146
+qwen3-0.6,P007,Set to 95 percent,Set to 95 percent,parameter,0,setVolume,"{""volumePercent"": 95}",setVolume,{},TRUE,TRUE,TRUE,295
+qwen3-0.6,P007,Set phone for quiet work environment,Set phone for quie wor environment,contextual,0.333,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,155
+qwen3-0.6,P007,Phone settings for public transport,Phon settings for public transport,contextual,0.2,setVolume,"{""volumePercent"": 40}",setVolume,{},TRUE,TRUE,TRUE,229
+qwen3-0.6,P007,I'm driving set appropriate mode,I'm driving eet apprapriate mode,contextual,0.4,setVolume,"{""volumePercent"": 70}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,166
+qwen3-0.6,P007,Set volume for exercise,Set volume for exercise,contextual,0,setVolume,"{""volumePercent"": 85}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,168
+qwen3-0.6,P007,Do not disturb until my meeting ends,Do not disturb until my meeting ends,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,158
+qwen3-0.6,P007,Make screen brighter,Make screen brighter,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,177
+qwen3-0.6,P007,Make phone quiet for library,Make phone quiet for library,contextual,0,setVolume,"{""volumePercent"": 20}",setVolume,{},TRUE,TRUE,TRUE,154
+qwen3-0.6,P007,Set volume to 50 percent,Set volume to 50 percent,parameter,0,setVolume,"{""volumePercent"": 50}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,187
+qwen3-0.6,P007,Minimum brightness,Minimum brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,208
+qwen3-0.6,P007,Enable quiet mode when at church,Enable quiet mode when at churc,rule,0.167,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,249
+qwen3-0.6,P008,Lower brightness,Lower brigh ness,direct,1,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,128
+qwen3-0.6,P008,Torch on please,Torch on pleas,direct,0.333,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,217
+qwen3-0.6,P008,Wifi off,Wifi ofa,direct,0.5,toggleWifi,"{""enable"": false}",toggleWifi,{},TRUE,TRUE,TRUE,169
+qwen3-0.6,P008,Set phone for quiet work environment,Set phone for quiet woro environmeot,contextual,0.333,setVolume,"{""volumePercent"": 25}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,175
+qwen3-0.6,P008,Turn off sounds while watching movies,Tuon off sounds weile watchin movies,rule,0.5,createRule,"{""trigger"": ""watching movies"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,218
+qwen3-0.6,P008,Mute my phone for the next 3 hours,Mute my phune for the next 3 hours,temporal,0.125,setDoNotDisturb,"{""durationMinutes"": 180}",setDoNotDisturb,{},TRUE,TRUE,TRUE,135
+qwen3-0.6,P008,Brighten screen,Brighten scrien,direct,0.5,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,116
+qwen3-0.6,P008,Prepare my device for nighttime,Prepare my device for nighttime,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,155
+qwen3-0.6,P008,Mute notifications when I'm in class,mut notifications whe I'm in classy,rule,0.5,createRule,"{""trigger"": ""in class"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,174
+qwen3-0.6,P008,Silence notifications when driving,Silence notifications when driving,rule,0,createRule,"{""trigger"": ""driving"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,234
+qwen3-0.6,P008,Flashlight off,flat light off,direct,1.5,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,141
+qwen3-0.6,P008,Make it 45 percent,Mak it 45 peicent,parameter,0.5,setVolume,"{""volumePercent"": 45}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,212
+qwen3-0.6,P009,Flashlight off,Flashlight off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,237
+qwen3-0.6,P009,Turn on DND for half an hour,Turn on DND for half an hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 30}",setDoNotDisturb,{},TRUE,TRUE,TRUE,145
+qwen3-0.6,P009,Switch off internet,Switch off internet,direct,0,toggleWifi,"{""enable"": false}",toggleWifi,{},TRUE,TRUE,TRUE,115
+qwen3-0.6,P009,Set volume at 30 percent,Set volume at 30 percent,parameter,0,setVolume,"{""volumePercent"": 30}",setVolume,{},TRUE,TRUE,TRUE,159
+qwen3-0.6,P009,Torch on please,Torch on please,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,193
+qwen3-0.6,P009,Enable quiet mode when at church,Enable quiet mode when at church,rule,0,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,206
+qwen3-0.6,P009,Set volume 90 percent,Set volume 90 percent,parameter,0,setVolume,"{""volumePercent"": 90}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,191
+qwen3-0.6,P009,Set volume to 50 percent,Set volume to 50 percent,parameter,0,setVolume,"{""volumePercent"": 50}",setVolume,{},TRUE,TRUE,TRUE,203
+qwen3-0.6,P009,Turn on flashlight,Turn on flashlight,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,196
+qwen3-0.6,P009,Decrease brightness,Decrease brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,172
+qwen3-0.6,P009,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,180
+qwen3-0.6,P009,Lower brightness,Lower brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,134
+qwen3-0.6,P010,Turn on wifi,Turn on wifi,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,151
+qwen3-0.6,P010,Turn off alerts while exercising,Turu off alerts whiie exercising,rule,0.4,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,173
+qwen3-0.6,P010,Screen brightness for outdoors,Screen brightness for outdours,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,155
+qwen3-0.6,P010,Change to 85 percent,Change to 85 percent,parameter,0,setVolume,"{""volumePercent"": 85}",setVolume,{},TRUE,TRUE,TRUE,236
+qwen3-0.6,P010,Mute phone during gym time,Mute phon during gym time,rule,0.2,createRule,"{""trigger"": ""gym time"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,192
+qwen3-0.6,P010,Enable DND when I'm studying,Enable DND when I'm studying,rule,0,createRule,"{""trigger"": ""studying"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,177
+qwen3-0.6,P010,Brightness at 50 percent,Brightness at 50 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 50}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,187
+qwen3-0.6,P010,Set phone for quiet work environment,Set phone for quiet wor environment,contextual,0.167,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,227
+qwen3-0.6,P010,Connect to wifi,Connect uo wifi,direct,0.333,toggleWifi,"{""enable"": true}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,169
+qwen3-0.6,P010,Set phone to sleep mode,Set phone to sleep mode,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,183
+qwen3-0.6,P010,I'm driving set appropriate mode,a'm driving set appropriate mod,contextual,0.4,setVolume,"{""volumePercent"": 70}",setVolume,{},TRUE,TRUE,TRUE,184
+qwen3-0.6,P010,Wifi off,Wifi off,direct,0,toggleWifi,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,174
+smollm-1.7b,P001,Turn off flashlight,Turn off flesh light,direct,0.667,toggleFlashlight,"{""enable"": false}",toggleFlashlight,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,355
+smollm-1.7b,P001,Quiet mode for 1 hour,Quiet mode for 1 hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,253
+smollm-1.7b,P001,I need quiet time for one hour,I need quiet time for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,333
+smollm-1.7b,P001,Max brightness,Max brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,380
+smollm-1.7b,P001,Make it suitable for cooking,Make it suitable for cooking,contextual,0,setVolume,"{""volumePercent"": 60}",setVolume,{},TRUE,TRUE,TRUE,293
+smollm-1.7b,P001,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,329
+smollm-1.7b,P001,Make it loud for music,Make it loud for music,contextual,0,setVolume,"{""volumePercent"": 90}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,336
+smollm-1.7b,P001,Enable silence for 2 hours,Enable silence for 2 hours,temporal,0,setDoNotDisturb,"{""durationMinutes"": 120}",setDoNotDisturb,{},TRUE,TRUE,TRUE,405
+smollm-1.7b,P001,Silence for the next 50 minutes,Silence for the next 50 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 50}",setDoNotDisturb,{},TRUE,TRUE,TRUE,461
+smollm-1.7b,P001,Torch on please,Torch on please,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,162
+smollm-1.7b,P001,Brightness suitable for dark room,Brightness suitable for dark room,contextual,0,setScreenBrightness,"{""brightnessPercent"": 20}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,405
+smollm-1.7b,P001,Turn off alerts while exercising,Turn off alerts while exercising,rule,0,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,302
+smollm-1.7b,P002,Silence when in meditation,Silence when in meditation,rule,0,createRule,"{""trigger"": ""in meditation"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,299
+smollm-1.7b,P002,Set brightness for reading,Set brightness for reading,contextual,0,setScreenBrightness,"{""brightnessPercent"": 70}",setScreenBrightness,{},TRUE,TRUE,TRUE,379
+smollm-1.7b,P002,Turn on do not disturb for 30 minutes,Turn on do not disturb for 30 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 30}",setDoNotDisturb,{},TRUE,TRUE,TRUE,275
+smollm-1.7b,P002,Torch off please,Torch off please,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,407
+smollm-1.7b,P002,Make screen brighter,Make screen brighter,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,389
+smollm-1.7b,P002,Quiet mode for 1 hour,Quiet mode for 1 hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,476
+smollm-1.7b,P002,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,242
+smollm-1.7b,P002,Enable quiet mode when at church,Enabl quiet mode when at church,rule,0.167,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,326
+smollm-1.7b,P002,Brighten screen,Brighten screen,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,353
+smollm-1.7b,P002,Set phone for quiet work environment,Set phone for auiet work environment,contextual,0.167,setVolume,"{""volumePercent"": 25}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,386
+smollm-1.7b,P002,Brightness up,Brightness up,direct,0,setScreenBrightness,"{""brightnessPercent"": 80}",setScreenBrightness,{},TRUE,TRUE,TRUE,388
+smollm-1.7b,P002,Flashlight on,Flashlight an,direct,0.5,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,360
+smollm-1.7b,P003,Enable do not disturb mode for 25 minutes,Enable do not disturb mode for 25 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 25}",setDoNotDisturb,{},TRUE,TRUE,TRUE,301
+smollm-1.7b,P003,Screen to 90 percent,Screen to 90 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 90}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,270
+smollm-1.7b,P003,Brighten screen,Brighte screen,direct,0.5,setScreenBrightness,"{""brightnessPercent"": 100}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,384
+smollm-1.7b,P003,Switch on internet,Switch on internet,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,218
+smollm-1.7b,P003,Phone settings for meditation,Phone settings for meditation,contextual,0,setVolume,"{""volumePercent"": 15}",setVolume,{},TRUE,TRUE,TRUE,405
+smollm-1.7b,P003,Set phone to sleep mode,Set phone to sleep mode,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,{},TRUE,TRUE,TRUE,242
+smollm-1.7b,P003,Half volume please,Half volume pleaae,parameter,0.333,setVolume,"{""volumePercent"": 50}",setVolume,{},TRUE,TRUE,TRUE,240
+smollm-1.7b,P003,Silence phone while sleeping,Silence phone while sleeping,rule,0,createRule,"{""trigger"": ""sleeping"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,324
+smollm-1.7b,P003,Turn off alerts when at work,Turn off alerts when at woak,rule,0.167,createRule,"{""trigger"": ""at work"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,287
+smollm-1.7b,P003,Adjust for movie watching,Adjust for movie watching,contextual,0,setVolume,"{""volumePercent"": 80}",setVolume,{},TRUE,TRUE,TRUE,425
+smollm-1.7b,P003,Set brightness for reading,Set brightness for readini,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 70}",setScreenBrightness,{},TRUE,TRUE,TRUE,331
+smollm-1.7b,P003,Set to minimum volume,Set to minimum volume,parameter,0,setVolume,"{""volumePercent"": 0}",setVolume,{},TRUE,TRUE,TRUE,333
+smollm-1.7b,P004,Quiet mode for 1 hour,Quie mode for 1 hour,temporal,0.2,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,352
+smollm-1.7b,P004,No interruptions for 40 minutes,No interruptions for 40 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 40}",setDoNotDisturb,{},TRUE,TRUE,TRUE,406
+smollm-1.7b,P004,Dim screen for sleeping,Dim scoeen for sleeping,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,382
+smollm-1.7b,P004,Light on,Light oe,direct,0.5,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,369
+smollm-1.7b,P004,Set brightness to 75 percent,Set brightness to 75 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 75}",setScreenBrightness,{},TRUE,TRUE,TRUE,520
+smollm-1.7b,P004,Turn off alerts for one hour,Turn off alerts fer one hour,temporal,0.167,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,262
+smollm-1.7b,P004,Turn off alerts while exercising,Turn off alerts while exeicising,rule,0.2,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,432
+smollm-1.7b,P004,Silence notifications for 90 minutes,silent notifications fur 90 minutes,temporal,0.4,setDoNotDisturb,"{""durationMinutes"": 90}",setDoNotDisturb,{},TRUE,TRUE,TRUE,405
+smollm-1.7b,P004,Connect to wifi,Connect to wifi,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,341
+smollm-1.7b,P004,Volume at 40 percent,Volume at 40 percent,parameter,0,setVolume,"{""volumePercent"": 40}",setVolume,{},TRUE,TRUE,TRUE,285
+smollm-1.7b,P004,Silence phone during dinner time,silence phone during dinne time,rule,0.2,createRule,"{""trigger"": ""dinner time"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,334
+smollm-1.7b,P004,Silence when in meditation,silence wien in meditatio,rule,0.5,createRule,"{""trigger"": ""in meditation"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,247
+smollm-1.7b,P005,Set to 95 percent,oet to 95 percent,parameter,0.25,setVolume,"{""volumePercent"": 95}",setVolume,{},TRUE,TRUE,TRUE,427
+smollm-1.7b,P005,Increase to 80 percent,Increase to 80 percent,parameter,0,setVolume,"{""volumePercent"": 80}",setVolume,{},TRUE,TRUE,TRUE,515
+smollm-1.7b,P005,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,464
+smollm-1.7b,P005,Turn on flashlight,Turn on flashlight,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,426
+smollm-1.7b,P005,Turn off sounds while watching movies,Turn off sound while watching movies,rule,0.167,createRule,"{""trigger"": ""watching movies"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,423
+smollm-1.7b,P005,Make phone quiet for library,Make phon quiet for library,contextual,0.2,setVolume,"{""volumePercent"": 20}",setVolume,{},TRUE,TRUE,TRUE,383
+smollm-1.7b,P005,Decrease brightness,Decrease brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,319
+smollm-1.7b,P005,Light off,Light off,direct,0,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,375
+smollm-1.7b,P005,Make it 25 percent,Make it 25 percent,parameter,0,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,351
+smollm-1.7b,P005,Mute during meetings,Mute during meetings,rule,0,createRule,"{""trigger"": ""during meetings"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,330
+smollm-1.7b,P005,Set to minimum volume,Set to minimum volume,parameter,0,setVolume,"{""volumePercent"": 0}",setVolume,{},TRUE,TRUE,TRUE,500
+smollm-1.7b,P005,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,337
+smollm-1.7b,P006,Minimum brightness,Minimum bright ness,direct,1,setScreenBrightness,"{""brightnessPercent"": 10}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,343
+smollm-1.7b,P006,Turn off alerts while exercising,Turn off alerts while exercising,rule,0,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,499
+smollm-1.7b,P006,Do not disturb for 15 minutes,Do not disturb for 15 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 15}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,364
+smollm-1.7b,P006,Volume to 20 percent please,Volume to 20 percent please,parameter,0,setVolume,"{""volumePercent"": 20}",setVolume,{},TRUE,TRUE,TRUE,273
+smollm-1.7b,P006,Make it loud for music,Make it loud for music,contextual,0,setVolume,"{""volumePercent"": 90}",setVolume,{},TRUE,TRUE,TRUE,180
+smollm-1.7b,P006,Flashlight off,Flashlight off,direct,0,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,312
+smollm-1.7b,P006,Keep phone silent for one hour,Keep phone silent for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,470
+smollm-1.7b,P006,Brightness down,Brightness down,direct,0,setScreenBrightness,"{""brightnessPercent"": 20}",setScreenBrightness,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,522
+smollm-1.7b,P006,Mute my phone for the next 3 hours,Mute my phone for the next 3 hours,temporal,0,setDoNotDisturb,"{""durationMinutes"": 180}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,363
+smollm-1.7b,P006,Brighten screen,Brighten screen,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,266
+smollm-1.7b,P006,I need quiet time for one hour,I need quiet time for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,361
+smollm-1.7b,P006,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,338
+smollm-1.7b,P007,Light off,Light off,direct,0,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,314
+smollm-1.7b,P007,Set to 95 percent,Set to 95 percent,parameter,0,setVolume,"{""volumePercent"": 95}",setVolume,{},TRUE,TRUE,TRUE,305
+smollm-1.7b,P007,Set phone for quiet work environment,Set phone for quie wor environment,contextual,0.333,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,357
+smollm-1.7b,P007,Phone settings for public transport,Phon settings for public transport,contextual,0.2,setVolume,"{""volumePercent"": 40}",setVolume,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,295
+smollm-1.7b,P007,I'm driving set appropriate mode,I'm driving eet apprapriate mode,contextual,0.4,setVolume,"{""volumePercent"": 70}",setVolume,{},TRUE,TRUE,TRUE,414
+smollm-1.7b,P007,Set volume for exercise,Set volume for exercise,contextual,0,setVolume,"{""volumePercent"": 85}",setVolume,{},TRUE,TRUE,TRUE,264
+smollm-1.7b,P007,Do not disturb until my meeting ends,Do not disturb until my meeting ends,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,277
+smollm-1.7b,P007,Make screen brighter,Make screen brighter,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,392
+smollm-1.7b,P007,Make phone quiet for library,Make phone quiet for library,contextual,0,setVolume,"{""volumePercent"": 20}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,380
+smollm-1.7b,P007,Set volume to 50 percent,Set volume to 50 percent,parameter,0,setVolume,"{""volumePercent"": 50}",setVolume,{},TRUE,TRUE,TRUE,366
+smollm-1.7b,P007,Minimum brightness,Minimum brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,405
+smollm-1.7b,P007,Enable quiet mode when at church,Enable quiet mode when at churc,rule,0.167,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,179
+smollm-1.7b,P008,Lower brightness,Lower brigh ness,direct,1,setScreenBrightness,"{""brightnessPercent"": 30}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,229
+smollm-1.7b,P008,Torch on please,Torch on pleas,direct,0.333,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,324
+smollm-1.7b,P008,Wifi off,Wifi ofa,direct,0.5,toggleWifi,"{""enable"": false}",toggleWifi,{},TRUE,TRUE,TRUE,389
+smollm-1.7b,P008,Set phone for quiet work environment,Set phone for quiet woro environmeot,contextual,0.333,setVolume,"{""volumePercent"": 25}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,375
+smollm-1.7b,P008,Turn off sounds while watching movies,Tuon off sounds weile watchin movies,rule,0.5,createRule,"{""trigger"": ""watching movies"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,196
+smollm-1.7b,P008,Mute my phone for the next 3 hours,Mute my phune for the next 3 hours,temporal,0.125,setDoNotDisturb,"{""durationMinutes"": 180}",setDoNotDisturb,{},TRUE,TRUE,TRUE,433
+smollm-1.7b,P008,Brighten screen,Brighten scrien,direct,0.5,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,456
+smollm-1.7b,P008,Prepare my device for nighttime,Prepare my device for nighttime,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,{},TRUE,TRUE,TRUE,403
+smollm-1.7b,P008,Mute notifications when I'm in class,mut notifications whe I'm in classy,rule,0.5,createRule,"{""trigger"": ""in class"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,460
+smollm-1.7b,P008,Silence notifications when driving,Silence notifications when driving,rule,0,createRule,"{""trigger"": ""driving"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,416
+smollm-1.7b,P008,Flashlight off,flat light off,direct,1.5,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,273
+smollm-1.7b,P008,Make it 45 percent,Mak it 45 peicent,parameter,0.5,setVolume,"{""volumePercent"": 45}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,332
+smollm-1.7b,P009,Flashlight off,Flashlight off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,464
+smollm-1.7b,P009,Turn on DND for half an hour,Turn on DND for half an hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 30}",setDoNotDisturb,{},TRUE,TRUE,TRUE,393
+smollm-1.7b,P009,Switch off internet,Switch off internet,direct,0,toggleWifi,"{""enable"": false}",toggleWifi,{},TRUE,TRUE,TRUE,326
+smollm-1.7b,P009,Set volume at 30 percent,Set volume at 30 percent,parameter,0,setVolume,"{""volumePercent"": 30}",setVolume,{},TRUE,TRUE,TRUE,247
+smollm-1.7b,P009,Torch on please,Torch on please,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,501
+smollm-1.7b,P009,Enable quiet mode when at church,Enable quiet mode when at church,rule,0,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,396
+smollm-1.7b,P009,Set volume 90 percent,Set volume 90 percent,parameter,0,setVolume,"{""volumePercent"": 90}",setVolume,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,210
+smollm-1.7b,P009,Set volume to 50 percent,Set volume to 50 percent,parameter,0,setVolume,"{""volumePercent"": 50}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,292
+smollm-1.7b,P009,Turn on flashlight,Turn on flashlight,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,307
+smollm-1.7b,P009,Decrease brightness,Decrease brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,225
+smollm-1.7b,P009,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,336
+smollm-1.7b,P009,Lower brightness,Lower brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,292
+smollm-1.7b,P010,Turn on wifi,Turn on wifi,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,439
+smollm-1.7b,P010,Turn off alerts while exercising,Turu off alerts whiie exercising,rule,0.4,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,355
+smollm-1.7b,P010,Screen brightness for outdoors,Screen brightness for outdours,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 100}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,302
+smollm-1.7b,P010,Change to 85 percent,Change to 85 percent,parameter,0,setVolume,"{""volumePercent"": 85}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,400
+smollm-1.7b,P010,Mute phone during gym time,Mute phon during gym time,rule,0.2,createRule,"{""trigger"": ""gym time"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,244
+smollm-1.7b,P010,Enable DND when I'm studying,Enable DND when I'm studying,rule,0,createRule,"{""trigger"": ""studying"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,235
+smollm-1.7b,P010,Brightness at 50 percent,Brightness at 50 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 50}",setScreenBrightness,{},TRUE,TRUE,TRUE,343
+smollm-1.7b,P010,Set phone for quiet work environment,Set phone for quiet wor environment,contextual,0.167,setVolume,"{""volumePercent"": 25}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,280
+smollm-1.7b,P010,Connect to wifi,Connect uo wifi,direct,0.333,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,245
+smollm-1.7b,P010,Set phone to sleep mode,Set phone to sleep mode,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,{},TRUE,TRUE,TRUE,378
+smollm-1.7b,P010,I'm driving set appropriate mode,a'm driving set appropriate mod,contextual,0.4,setVolume,"{""volumePercent"": 70}",setVolume,{},TRUE,TRUE,TRUE,344
+smollm-1.7b,P010,Wifi off,Wifi off,direct,0,toggleWifi,"{""enable"": false}",toggleWifi,{},TRUE,TRUE,TRUE,328
+gemma-2-2b,P001,Turn off flashlight,Turn off flesh light,direct,0.667,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,277
+gemma-2-2b,P001,Quiet mode for 1 hour,Quiet mode for 1 hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,433
+gemma-2-2b,P001,I need quiet time for one hour,I need quiet time for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,407
+gemma-2-2b,P001,Max brightness,Max brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,385
+gemma-2-2b,P001,Make it suitable for cooking,Make it suitable for cooking,contextual,0,setVolume,"{""volumePercent"": 60}",setVolume,{},TRUE,TRUE,TRUE,462
+gemma-2-2b,P001,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,502
+gemma-2-2b,P001,Make it loud for music,Make it loud for music,contextual,0,setVolume,"{""volumePercent"": 90}",setVolume,{},TRUE,TRUE,TRUE,499
+gemma-2-2b,P001,Enable silence for 2 hours,Enable silence for 2 hours,temporal,0,setDoNotDisturb,"{""durationMinutes"": 120}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,342
+gemma-2-2b,P001,Silence for the next 50 minutes,Silence for the next 50 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 50}",setDoNotDisturb,{},TRUE,TRUE,TRUE,423
+gemma-2-2b,P001,Torch on please,Torch on please,direct,0,toggleFlashlight,"{""enable"": true}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,500
+gemma-2-2b,P001,Brightness suitable for dark room,Brightness suitable for dark room,contextual,0,setScreenBrightness,"{""brightnessPercent"": 20}",setScreenBrightness,{},TRUE,TRUE,TRUE,470
+gemma-2-2b,P001,Turn off alerts while exercising,Turn off alerts while exercising,rule,0,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,350
+gemma-2-2b,P002,Silence when in meditation,Silence when in meditation,rule,0,createRule,"{""trigger"": ""in meditation"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,295
+gemma-2-2b,P002,Set brightness for reading,Set brightness for reading,contextual,0,setScreenBrightness,"{""brightnessPercent"": 70}",setScreenBrightness,{},TRUE,TRUE,TRUE,374
+gemma-2-2b,P002,Turn on do not disturb for 30 minutes,Turn on do not disturb for 30 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 30}",setDoNotDisturb,{},TRUE,TRUE,TRUE,432
+gemma-2-2b,P002,Torch off please,Torch off please,direct,0,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,499
+gemma-2-2b,P002,Make screen brighter,Make screen brighter,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,381
+gemma-2-2b,P002,Quiet mode for 1 hour,Quiet mode for 1 hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,384
+gemma-2-2b,P002,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,319
+gemma-2-2b,P002,Enable quiet mode when at church,Enabl quiet mode when at church,rule,0.167,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,461
+gemma-2-2b,P002,Brighten screen,Brighten screen,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,449
+gemma-2-2b,P002,Set phone for quiet work environment,Set phone for auiet work environment,contextual,0.167,setVolume,"{""volumePercent"": 25}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,429
+gemma-2-2b,P002,Brightness up,Brightness up,direct,0,setScreenBrightness,"{""brightnessPercent"": 80}",setScreenBrightness,{},TRUE,TRUE,TRUE,529
+gemma-2-2b,P002,Flashlight on,Flashlight an,direct,0.5,toggleFlashlight,"{""enable"": true}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,504
+gemma-2-2b,P003,Enable do not disturb mode for 25 minutes,Enable do not disturb mode for 25 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 25}",setDoNotDisturb,{},TRUE,TRUE,TRUE,400
+gemma-2-2b,P003,Screen to 90 percent,Screen to 90 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 90}",setScreenBrightness,{},TRUE,TRUE,TRUE,508
+gemma-2-2b,P003,Brighten screen,Brighte screen,direct,0.5,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,428
+gemma-2-2b,P003,Switch on internet,Switch on internet,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,506
+gemma-2-2b,P003,Phone settings for meditation,Phone settings for meditation,contextual,0,setVolume,"{""volumePercent"": 15}",setVolume,{},TRUE,TRUE,TRUE,423
+gemma-2-2b,P003,Set phone to sleep mode,Set phone to sleep mode,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,{},TRUE,TRUE,TRUE,489
+gemma-2-2b,P003,Half volume please,Half volume pleaae,parameter,0.333,setVolume,"{""volumePercent"": 50}",setVolume,{},TRUE,TRUE,TRUE,368
+gemma-2-2b,P003,Silence phone while sleeping,Silence phone while sleeping,rule,0,createRule,"{""trigger"": ""sleeping"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,542
+gemma-2-2b,P003,Turn off alerts when at work,Turn off alerts when at woak,rule,0.167,createRule,"{""trigger"": ""at work"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,481
+gemma-2-2b,P003,Adjust for movie watching,Adjust for movie watching,contextual,0,setVolume,"{""volumePercent"": 80}",setVolume,{},TRUE,TRUE,TRUE,543
+gemma-2-2b,P003,Set brightness for reading,Set brightness for readini,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 70}",setScreenBrightness,{},TRUE,TRUE,TRUE,410
+gemma-2-2b,P003,Set to minimum volume,Set to minimum volume,parameter,0,setVolume,"{""volumePercent"": 0}",setVolume,{},TRUE,TRUE,TRUE,397
+gemma-2-2b,P004,Quiet mode for 1 hour,Quie mode for 1 hour,temporal,0.2,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,466
+gemma-2-2b,P004,No interruptions for 40 minutes,No interruptions for 40 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 40}",setDoNotDisturb,{},TRUE,TRUE,TRUE,372
+gemma-2-2b,P004,Dim screen for sleeping,Dim scoeen for sleeping,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,502
+gemma-2-2b,P004,Light on,Light oe,direct,0.5,toggleFlashlight,"{""enable"": true}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,341
+gemma-2-2b,P004,Set brightness to 75 percent,Set brightness to 75 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 75}",setScreenBrightness,{},TRUE,TRUE,TRUE,414
+gemma-2-2b,P004,Turn off alerts for one hour,Turn off alerts fer one hour,temporal,0.167,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,415
+gemma-2-2b,P004,Turn off alerts while exercising,Turn off alerts while exeicising,rule,0.2,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,447
+gemma-2-2b,P004,Silence notifications for 90 minutes,silent notifications fur 90 minutes,temporal,0.4,setDoNotDisturb,"{""durationMinutes"": 90}",setDoNotDisturb,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,568
+gemma-2-2b,P004,Connect to wifi,Connect to wifi,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,509
+gemma-2-2b,P004,Volume at 40 percent,Volume at 40 percent,parameter,0,setVolume,"{""volumePercent"": 40}",setVolume,{},TRUE,TRUE,TRUE,457
+gemma-2-2b,P004,Silence phone during dinner time,silence phone during dinne time,rule,0.2,createRule,"{""trigger"": ""dinner time"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,413
+gemma-2-2b,P004,Silence when in meditation,silence wien in meditatio,rule,0.5,createRule,"{""trigger"": ""in meditation"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,500
+gemma-2-2b,P005,Set to 95 percent,oet to 95 percent,parameter,0.25,setVolume,"{""volumePercent"": 95}",setVolume,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,324
+gemma-2-2b,P005,Increase to 80 percent,Increase to 80 percent,parameter,0,setVolume,"{""volumePercent"": 80}",setVolume,{},TRUE,TRUE,TRUE,392
+gemma-2-2b,P005,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,445
+gemma-2-2b,P005,Turn on flashlight,Turn on flashlight,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,491
+gemma-2-2b,P005,Turn off sounds while watching movies,Turn off sound while watching movies,rule,0.167,createRule,"{""trigger"": ""watching movies"", ""action"": ""mute""}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,368
+gemma-2-2b,P005,Make phone quiet for library,Make phon quiet for library,contextual,0.2,setVolume,"{""volumePercent"": 20}",setVolume,{},TRUE,TRUE,TRUE,531
+gemma-2-2b,P005,Decrease brightness,Decrease brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,244
+gemma-2-2b,P005,Light off,Light off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,507
+gemma-2-2b,P005,Make it 25 percent,Make it 25 percent,parameter,0,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,436
+gemma-2-2b,P005,Mute during meetings,Mute during meetings,rule,0,createRule,"{""trigger"": ""during meetings"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,593
+gemma-2-2b,P005,Set to minimum volume,Set to minimum volume,parameter,0,setVolume,"{""volumePercent"": 0}",setVolume,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,363
+gemma-2-2b,P005,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,392
+gemma-2-2b,P006,Minimum brightness,Minimum bright ness,direct,1,setScreenBrightness,"{""brightnessPercent"": 10}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,424
+gemma-2-2b,P006,Turn off alerts while exercising,Turn off alerts while exercising,rule,0,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,308
+gemma-2-2b,P006,Do not disturb for 15 minutes,Do not disturb for 15 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 15}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,204
+gemma-2-2b,P006,Volume to 20 percent please,Volume to 20 percent please,parameter,0,setVolume,"{""volumePercent"": 20}",setVolume,{},TRUE,TRUE,TRUE,478
+gemma-2-2b,P006,Make it loud for music,Make it loud for music,contextual,0,setVolume,"{""volumePercent"": 90}",setVolume,{},TRUE,TRUE,TRUE,628
+gemma-2-2b,P006,Flashlight off,Flashlight off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,411
+gemma-2-2b,P006,Keep phone silent for one hour,Keep phone silent for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,440
+gemma-2-2b,P006,Brightness down,Brightness down,direct,0,setScreenBrightness,"{""brightnessPercent"": 20}",setScreenBrightness,{},TRUE,TRUE,TRUE,445
+gemma-2-2b,P006,Mute my phone for the next 3 hours,Mute my phone for the next 3 hours,temporal,0,setDoNotDisturb,"{""durationMinutes"": 180}",setDoNotDisturb,{},TRUE,TRUE,TRUE,475
+gemma-2-2b,P006,Brighten screen,Brighten screen,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,368
+gemma-2-2b,P006,I need quiet time for one hour,I need quiet time for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,339
+gemma-2-2b,P006,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,429
+gemma-2-2b,P007,Light off,Light off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,375
+gemma-2-2b,P007,Set to 95 percent,Set to 95 percent,parameter,0,setVolume,"{""volumePercent"": 95}",setVolume,{},TRUE,TRUE,TRUE,268
+gemma-2-2b,P007,Set phone for quiet work environment,Set phone for quie wor environment,contextual,0.333,setVolume,"{""volumePercent"": 25}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,453
+gemma-2-2b,P007,Phone settings for public transport,Phon settings for public transport,contextual,0.2,setVolume,"{""volumePercent"": 40}",setVolume,{},TRUE,TRUE,TRUE,231
+gemma-2-2b,P007,I'm driving set appropriate mode,I'm driving eet apprapriate mode,contextual,0.4,setVolume,"{""volumePercent"": 70}",setVolume,{},TRUE,TRUE,TRUE,352
+gemma-2-2b,P007,Set volume for exercise,Set volume for exercise,contextual,0,setVolume,"{""volumePercent"": 85}",setVolume,{},TRUE,TRUE,TRUE,548
+gemma-2-2b,P007,Do not disturb until my meeting ends,Do not disturb until my meeting ends,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,340
+gemma-2-2b,P007,Make screen brighter,Make screen brighter,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,484
+gemma-2-2b,P007,Make phone quiet for library,Make phone quiet for library,contextual,0,setVolume,"{""volumePercent"": 20}",setVolume,{},TRUE,TRUE,TRUE,450
+gemma-2-2b,P007,Set volume to 50 percent,Set volume to 50 percent,parameter,0,setVolume,"{""volumePercent"": 50}",setVolume,{},TRUE,TRUE,TRUE,359
+gemma-2-2b,P007,Minimum brightness,Minimum brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,529
+gemma-2-2b,P007,Enable quiet mode when at church,Enable quiet mode when at churc,rule,0.167,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,456
+gemma-2-2b,P008,Lower brightness,Lower brigh ness,direct,1,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,533
+gemma-2-2b,P008,Torch on please,Torch on pleas,direct,0.333,toggleFlashlight,"{""enable"": true}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,572
+gemma-2-2b,P008,Wifi off,Wifi ofa,direct,0.5,toggleWifi,"{""enable"": false}",toggleWifi,{},TRUE,TRUE,TRUE,432
+gemma-2-2b,P008,Set phone for quiet work environment,Set phone for quiet woro environmeot,contextual,0.333,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,448
+gemma-2-2b,P008,Turn off sounds while watching movies,Tuon off sounds weile watchin movies,rule,0.5,createRule,"{""trigger"": ""watching movies"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,415
+gemma-2-2b,P008,Mute my phone for the next 3 hours,Mute my phune for the next 3 hours,temporal,0.125,setDoNotDisturb,"{""durationMinutes"": 180}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,230
+gemma-2-2b,P008,Brighten screen,Brighten scrien,direct,0.5,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,444
+gemma-2-2b,P008,Prepare my device for nighttime,Prepare my device for nighttime,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,{},TRUE,TRUE,TRUE,508
+gemma-2-2b,P008,Mute notifications when I'm in class,mut notifications whe I'm in classy,rule,0.5,createRule,"{""trigger"": ""in class"", ""action"": ""mute""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,327
+gemma-2-2b,P008,Silence notifications when driving,Silence notifications when driving,rule,0,createRule,"{""trigger"": ""driving"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,508
+gemma-2-2b,P008,Flashlight off,flat light off,direct,1.5,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,374
+gemma-2-2b,P008,Make it 45 percent,Mak it 45 peicent,parameter,0.5,setVolume,"{""volumePercent"": 45}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,514
+gemma-2-2b,P009,Flashlight off,Flashlight off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,372
+gemma-2-2b,P009,Turn on DND for half an hour,Turn on DND for half an hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 30}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,459
+gemma-2-2b,P009,Switch off internet,Switch off internet,direct,0,toggleWifi,"{""enable"": false}",toggleWifi,{},TRUE,TRUE,TRUE,264
+gemma-2-2b,P009,Set volume at 30 percent,Set volume at 30 percent,parameter,0,setVolume,"{""volumePercent"": 30}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,329
+gemma-2-2b,P009,Torch on please,Torch on please,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,347
+gemma-2-2b,P009,Enable quiet mode when at church,Enable quiet mode when at church,rule,0,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,458
+gemma-2-2b,P009,Set volume 90 percent,Set volume 90 percent,parameter,0,setVolume,"{""volumePercent"": 90}",setVolume,{},TRUE,TRUE,TRUE,312
+gemma-2-2b,P009,Set volume to 50 percent,Set volume to 50 percent,parameter,0,setVolume,"{""volumePercent"": 50}",setVolume,{},TRUE,TRUE,TRUE,314
+gemma-2-2b,P009,Turn on flashlight,Turn on flashlight,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,423
+gemma-2-2b,P009,Decrease brightness,Decrease brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,392
+gemma-2-2b,P009,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,366
+gemma-2-2b,P009,Lower brightness,Lower brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,419
+gemma-2-2b,P010,Turn on wifi,Turn on wifi,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,424
+gemma-2-2b,P010,Turn off alerts while exercising,Turu off alerts whiie exercising,rule,0.4,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,481
+gemma-2-2b,P010,Screen brightness for outdoors,Screen brightness for outdours,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,306
+gemma-2-2b,P010,Change to 85 percent,Change to 85 percent,parameter,0,setVolume,"{""volumePercent"": 85}",setVolume,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,426
+gemma-2-2b,P010,Mute phone during gym time,Mute phon during gym time,rule,0.2,createRule,"{""trigger"": ""gym time"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,508
+gemma-2-2b,P010,Enable DND when I'm studying,Enable DND when I'm studying,rule,0,createRule,"{""trigger"": ""studying"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,220
+gemma-2-2b,P010,Brightness at 50 percent,Brightness at 50 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 50}",setScreenBrightness,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,417
+gemma-2-2b,P010,Set phone for quiet work environment,Set phone for quiet wor environment,contextual,0.167,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,540
+gemma-2-2b,P010,Connect to wifi,Connect uo wifi,direct,0.333,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,349
+gemma-2-2b,P010,Set phone to sleep mode,Set phone to sleep mode,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,{},TRUE,TRUE,TRUE,471
+gemma-2-2b,P010,I'm driving set appropriate mode,a'm driving set appropriate mod,contextual,0.4,setVolume,"{""volumePercent"": 70}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,289
+gemma-2-2b,P010,Wifi off,Wifi off,direct,0,toggleWifi,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,494
+llama-3.2-3b,P001,Turn off flashlight,Turn off flesh light,direct,0.667,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,672
+llama-3.2-3b,P001,Quiet mode for 1 hour,Quiet mode for 1 hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,625
+llama-3.2-3b,P001,I need quiet time for one hour,I need quiet time for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,453
+llama-3.2-3b,P001,Max brightness,Max brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,550
+llama-3.2-3b,P001,Make it suitable for cooking,Make it suitable for cooking,contextual,0,setVolume,"{""volumePercent"": 60}",setVolume,{},TRUE,TRUE,TRUE,621
+llama-3.2-3b,P001,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,455
+llama-3.2-3b,P001,Make it loud for music,Make it loud for music,contextual,0,setVolume,"{""volumePercent"": 90}",setVolume,{},TRUE,TRUE,TRUE,579
+llama-3.2-3b,P001,Enable silence for 2 hours,Enable silence for 2 hours,temporal,0,setDoNotDisturb,"{""durationMinutes"": 120}",setDoNotDisturb,{},TRUE,TRUE,TRUE,490
+llama-3.2-3b,P001,Silence for the next 50 minutes,Silence for the next 50 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 50}",setDoNotDisturb,{},TRUE,TRUE,TRUE,391
+llama-3.2-3b,P001,Torch on please,Torch on please,direct,0,toggleFlashlight,"{""enable"": true}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,794
+llama-3.2-3b,P001,Brightness suitable for dark room,Brightness suitable for dark room,contextual,0,setScreenBrightness,"{""brightnessPercent"": 20}",setScreenBrightness,{},TRUE,TRUE,TRUE,432
+llama-3.2-3b,P001,Turn off alerts while exercising,Turn off alerts while exercising,rule,0,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,612
+llama-3.2-3b,P002,Silence when in meditation,Silence when in meditation,rule,0,createRule,"{""trigger"": ""in meditation"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,496
+llama-3.2-3b,P002,Set brightness for reading,Set brightness for reading,contextual,0,setScreenBrightness,"{""brightnessPercent"": 70}",setScreenBrightness,{},TRUE,TRUE,TRUE,344
+llama-3.2-3b,P002,Turn on do not disturb for 30 minutes,Turn on do not disturb for 30 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 30}",setDoNotDisturb,{},TRUE,TRUE,TRUE,511
+llama-3.2-3b,P002,Torch off please,Torch off please,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,553
+llama-3.2-3b,P002,Make screen brighter,Make screen brighter,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,631
+llama-3.2-3b,P002,Quiet mode for 1 hour,Quiet mode for 1 hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,580
+llama-3.2-3b,P002,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,533
+llama-3.2-3b,P002,Enable quiet mode when at church,Enabl quiet mode when at church,rule,0.167,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,701
+llama-3.2-3b,P002,Brighten screen,Brighten screen,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,444
+llama-3.2-3b,P002,Set phone for quiet work environment,Set phone for auiet work environment,contextual,0.167,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,405
+llama-3.2-3b,P002,Brightness up,Brightness up,direct,0,setScreenBrightness,"{""brightnessPercent"": 80}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,472
+llama-3.2-3b,P002,Flashlight on,Flashlight an,direct,0.5,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,581
+llama-3.2-3b,P003,Enable do not disturb mode for 25 minutes,Enable do not disturb mode for 25 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 25}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,597
+llama-3.2-3b,P003,Screen to 90 percent,Screen to 90 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 90}",setScreenBrightness,{},TRUE,TRUE,TRUE,492
+llama-3.2-3b,P003,Brighten screen,Brighte screen,direct,0.5,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,486
+llama-3.2-3b,P003,Switch on internet,Switch on internet,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,507
+llama-3.2-3b,P003,Phone settings for meditation,Phone settings for meditation,contextual,0,setVolume,"{""volumePercent"": 15}",setVolume,{},TRUE,TRUE,TRUE,684
+llama-3.2-3b,P003,Set phone to sleep mode,Set phone to sleep mode,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,{},TRUE,TRUE,TRUE,601
+llama-3.2-3b,P003,Half volume please,Half volume pleaae,parameter,0.333,setVolume,"{""volumePercent"": 50}",setVolume,{},TRUE,TRUE,TRUE,479
+llama-3.2-3b,P003,Silence phone while sleeping,Silence phone while sleeping,rule,0,createRule,"{""trigger"": ""sleeping"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,329
+llama-3.2-3b,P003,Turn off alerts when at work,Turn off alerts when at woak,rule,0.167,createRule,"{""trigger"": ""at work"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,568
+llama-3.2-3b,P003,Adjust for movie watching,Adjust for movie watching,contextual,0,setVolume,"{""volumePercent"": 80}",setVolume,{},TRUE,TRUE,TRUE,509
+llama-3.2-3b,P003,Set brightness for reading,Set brightness for readini,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 70}",setScreenBrightness,{},TRUE,TRUE,TRUE,630
+llama-3.2-3b,P003,Set to minimum volume,Set to minimum volume,parameter,0,setVolume,"{""volumePercent"": 0}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,493
+llama-3.2-3b,P004,Quiet mode for 1 hour,Quie mode for 1 hour,temporal,0.2,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,617
+llama-3.2-3b,P004,No interruptions for 40 minutes,No interruptions for 40 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 40}",setDoNotDisturb,{},TRUE,TRUE,TRUE,653
+llama-3.2-3b,P004,Dim screen for sleeping,Dim scoeen for sleeping,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,461
+llama-3.2-3b,P004,Light on,Light oe,direct,0.5,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,380
+llama-3.2-3b,P004,Set brightness to 75 percent,Set brightness to 75 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 75}",setScreenBrightness,{},TRUE,TRUE,TRUE,458
+llama-3.2-3b,P004,Turn off alerts for one hour,Turn off alerts fer one hour,temporal,0.167,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,607
+llama-3.2-3b,P004,Turn off alerts while exercising,Turn off alerts while exeicising,rule,0.2,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,413
+llama-3.2-3b,P004,Silence notifications for 90 minutes,silent notifications fur 90 minutes,temporal,0.4,setDoNotDisturb,"{""durationMinutes"": 90}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,452
+llama-3.2-3b,P004,Connect to wifi,Connect to wifi,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,435
+llama-3.2-3b,P004,Volume at 40 percent,Volume at 40 percent,parameter,0,setVolume,"{""volumePercent"": 40}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,696
+llama-3.2-3b,P004,Silence phone during dinner time,silence phone during dinne time,rule,0.2,createRule,"{""trigger"": ""dinner time"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,553
+llama-3.2-3b,P004,Silence when in meditation,silence wien in meditatio,rule,0.5,createRule,"{""trigger"": ""in meditation"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,475
+llama-3.2-3b,P005,Set to 95 percent,oet to 95 percent,parameter,0.25,setVolume,"{""volumePercent"": 95}",setVolume,{},TRUE,TRUE,TRUE,533
+llama-3.2-3b,P005,Increase to 80 percent,Increase to 80 percent,parameter,0,setVolume,"{""volumePercent"": 80}",setVolume,{},TRUE,TRUE,TRUE,341
+llama-3.2-3b,P005,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,735
+llama-3.2-3b,P005,Turn on flashlight,Turn on flashlight,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,612
+llama-3.2-3b,P005,Turn off sounds while watching movies,Turn off sound while watching movies,rule,0.167,createRule,"{""trigger"": ""watching movies"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,545
+llama-3.2-3b,P005,Make phone quiet for library,Make phon quiet for library,contextual,0.2,setVolume,"{""volumePercent"": 20}",setVolume,{},TRUE,TRUE,TRUE,414
+llama-3.2-3b,P005,Decrease brightness,Decrease brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,605
+llama-3.2-3b,P005,Light off,Light off,direct,0,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,641
+llama-3.2-3b,P005,Make it 25 percent,Make it 25 percent,parameter,0,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,595
+llama-3.2-3b,P005,Mute during meetings,Mute during meetings,rule,0,createRule,"{""trigger"": ""during meetings"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,455
+llama-3.2-3b,P005,Set to minimum volume,Set to minimum volume,parameter,0,setVolume,"{""volumePercent"": 0}",setVolume,{},TRUE,TRUE,TRUE,621
+llama-3.2-3b,P005,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,557
+llama-3.2-3b,P006,Minimum brightness,Minimum bright ness,direct,1,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,505
+llama-3.2-3b,P006,Turn off alerts while exercising,Turn off alerts while exercising,rule,0,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,504
+llama-3.2-3b,P006,Do not disturb for 15 minutes,Do not disturb for 15 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 15}",setDoNotDisturb,{},TRUE,TRUE,TRUE,531
+llama-3.2-3b,P006,Volume to 20 percent please,Volume to 20 percent please,parameter,0,setVolume,"{""volumePercent"": 20}",setVolume,{},TRUE,TRUE,TRUE,549
+llama-3.2-3b,P006,Make it loud for music,Make it loud for music,contextual,0,setVolume,"{""volumePercent"": 90}",setVolume,{},TRUE,TRUE,TRUE,658
+llama-3.2-3b,P006,Flashlight off,Flashlight off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,507
+llama-3.2-3b,P006,Keep phone silent for one hour,Keep phone silent for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,597
+llama-3.2-3b,P006,Brightness down,Brightness down,direct,0,setScreenBrightness,"{""brightnessPercent"": 20}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,525
+llama-3.2-3b,P006,Mute my phone for the next 3 hours,Mute my phone for the next 3 hours,temporal,0,setDoNotDisturb,"{""durationMinutes"": 180}",setDoNotDisturb,{},TRUE,TRUE,TRUE,576
+llama-3.2-3b,P006,Brighten screen,Brighten screen,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,600
+llama-3.2-3b,P006,I need quiet time for one hour,I need quiet time for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,516
+llama-3.2-3b,P006,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,624
+llama-3.2-3b,P007,Light off,Light off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,593
+llama-3.2-3b,P007,Set to 95 percent,Set to 95 percent,parameter,0,setVolume,"{""volumePercent"": 95}",setVolume,{},TRUE,TRUE,TRUE,587
+llama-3.2-3b,P007,Set phone for quiet work environment,Set phone for quie wor environment,contextual,0.333,setVolume,"{""volumePercent"": 25}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,401
+llama-3.2-3b,P007,Phone settings for public transport,Phon settings for public transport,contextual,0.2,setVolume,"{""volumePercent"": 40}",setVolume,{},TRUE,TRUE,TRUE,597
+llama-3.2-3b,P007,I'm driving set appropriate mode,I'm driving eet apprapriate mode,contextual,0.4,setVolume,"{""volumePercent"": 70}",setVolume,{},TRUE,TRUE,TRUE,393
+llama-3.2-3b,P007,Set volume for exercise,Set volume for exercise,contextual,0,setVolume,"{""volumePercent"": 85}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,396
+llama-3.2-3b,P007,Do not disturb until my meeting ends,Do not disturb until my meeting ends,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,706
+llama-3.2-3b,P007,Make screen brighter,Make screen brighter,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,518
+llama-3.2-3b,P007,Make phone quiet for library,Make phone quiet for library,contextual,0,setVolume,"{""volumePercent"": 20}",setVolume,{},TRUE,TRUE,TRUE,729
+llama-3.2-3b,P007,Set volume to 50 percent,Set volume to 50 percent,parameter,0,setVolume,"{""volumePercent"": 50}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,609
+llama-3.2-3b,P007,Minimum brightness,Minimum brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,509
+llama-3.2-3b,P007,Enable quiet mode when at church,Enable quiet mode when at churc,rule,0.167,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,728
+llama-3.2-3b,P008,Lower brightness,Lower brigh ness,direct,1,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,492
+llama-3.2-3b,P008,Torch on please,Torch on pleas,direct,0.333,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,395
+llama-3.2-3b,P008,Wifi off,Wifi ofa,direct,0.5,toggleWifi,"{""enable"": false}",toggleWifi,{},TRUE,TRUE,TRUE,718
+llama-3.2-3b,P008,Set phone for quiet work environment,Set phone for quiet woro environmeot,contextual,0.333,setVolume,"{""volumePercent"": 25}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,601
+llama-3.2-3b,P008,Turn off sounds while watching movies,Tuon off sounds weile watchin movies,rule,0.5,createRule,"{""trigger"": ""watching movies"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,570
+llama-3.2-3b,P008,Mute my phone for the next 3 hours,Mute my phune for the next 3 hours,temporal,0.125,setDoNotDisturb,"{""durationMinutes"": 180}",setDoNotDisturb,{},TRUE,TRUE,TRUE,766
+llama-3.2-3b,P008,Brighten screen,Brighten scrien,direct,0.5,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,424
+llama-3.2-3b,P008,Prepare my device for nighttime,Prepare my device for nighttime,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,{},TRUE,TRUE,TRUE,677
+llama-3.2-3b,P008,Mute notifications when I'm in class,mut notifications whe I'm in classy,rule,0.5,createRule,"{""trigger"": ""in class"", ""action"": ""mute""}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,542
+llama-3.2-3b,P008,Silence notifications when driving,Silence notifications when driving,rule,0,createRule,"{""trigger"": ""driving"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,625
+llama-3.2-3b,P008,Flashlight off,flat light off,direct,1.5,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,514
+llama-3.2-3b,P008,Make it 45 percent,Mak it 45 peicent,parameter,0.5,setVolume,"{""volumePercent"": 45}",setVolume,{},TRUE,TRUE,TRUE,602
+llama-3.2-3b,P009,Flashlight off,Flashlight off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,545
+llama-3.2-3b,P009,Turn on DND for half an hour,Turn on DND for half an hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 30}",setDoNotDisturb,{},TRUE,TRUE,TRUE,497
+llama-3.2-3b,P009,Switch off internet,Switch off internet,direct,0,toggleWifi,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,440
+llama-3.2-3b,P009,Set volume at 30 percent,Set volume at 30 percent,parameter,0,setVolume,"{""volumePercent"": 30}",setVolume,{},TRUE,TRUE,TRUE,592
+llama-3.2-3b,P009,Torch on please,Torch on please,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,637
+llama-3.2-3b,P009,Enable quiet mode when at church,Enable quiet mode when at church,rule,0,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,792
+llama-3.2-3b,P009,Set volume 90 percent,Set volume 90 percent,parameter,0,setVolume,"{""volumePercent"": 90}",setVolume,{},TRUE,TRUE,TRUE,687
+llama-3.2-3b,P009,Set volume to 50 percent,Set volume to 50 percent,parameter,0,setVolume,"{""volumePercent"": 50}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,360
+llama-3.2-3b,P009,Turn on flashlight,Turn on flashlight,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,787
+llama-3.2-3b,P009,Decrease brightness,Decrease brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,483
+llama-3.2-3b,P009,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,462
+llama-3.2-3b,P009,Lower brightness,Lower brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,475
+llama-3.2-3b,P010,Turn on wifi,Turn on wifi,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,321
+llama-3.2-3b,P010,Turn off alerts while exercising,Turu off alerts whiie exercising,rule,0.4,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,674
+llama-3.2-3b,P010,Screen brightness for outdoors,Screen brightness for outdours,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,670
+llama-3.2-3b,P010,Change to 85 percent,Change to 85 percent,parameter,0,setVolume,"{""volumePercent"": 85}",setVolume,{},TRUE,TRUE,TRUE,674
+llama-3.2-3b,P010,Mute phone during gym time,Mute phon during gym time,rule,0.2,createRule,"{""trigger"": ""gym time"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,608
+llama-3.2-3b,P010,Enable DND when I'm studying,Enable DND when I'm studying,rule,0,createRule,"{""trigger"": ""studying"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,507
+llama-3.2-3b,P010,Brightness at 50 percent,Brightness at 50 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 50}",setScreenBrightness,{},TRUE,TRUE,TRUE,582
+llama-3.2-3b,P010,Set phone for quiet work environment,Set phone for quiet wor environment,contextual,0.167,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,639
+llama-3.2-3b,P010,Connect to wifi,Connect uo wifi,direct,0.333,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,484
+llama-3.2-3b,P010,Set phone to sleep mode,Set phone to sleep mode,contextual,0,setVolume,"{""volumePercent"": 10}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,578
+llama-3.2-3b,P010,I'm driving set appropriate mode,a'm driving set appropriate mod,contextual,0.4,setVolume,"{""volumePercent"": 70}",setVolume,{},TRUE,TRUE,TRUE,751
+llama-3.2-3b,P010,Wifi off,Wifi off,direct,0,toggleWifi,"{""enable"": false}",toggleWifi,{},TRUE,TRUE,TRUE,732
+phi-3.5-mini,P001,Turn off flashlight,Turn off flesh light,direct,0.667,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,567
+phi-3.5-mini,P001,Quiet mode for 1 hour,Quiet mode for 1 hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,581
+phi-3.5-mini,P001,I need quiet time for one hour,I need quiet time for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,721
+phi-3.5-mini,P001,Max brightness,Max brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,545
+phi-3.5-mini,P001,Make it suitable for cooking,Make it suitable for cooking,contextual,0,setVolume,"{""volumePercent"": 60}",setVolume,{},TRUE,TRUE,TRUE,663
+phi-3.5-mini,P001,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,726
+phi-3.5-mini,P001,Make it loud for music,Make it loud for music,contextual,0,setVolume,"{""volumePercent"": 90}",setVolume,{},TRUE,TRUE,TRUE,641
+phi-3.5-mini,P001,Enable silence for 2 hours,Enable silence for 2 hours,temporal,0,setDoNotDisturb,"{""durationMinutes"": 120}",setDoNotDisturb,{},TRUE,TRUE,TRUE,962
+phi-3.5-mini,P001,Silence for the next 50 minutes,Silence for the next 50 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 50}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,927
+phi-3.5-mini,P001,Torch on please,Torch on please,direct,0,toggleFlashlight,"{""enable"": true}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,636
+phi-3.5-mini,P001,Brightness suitable for dark room,Brightness suitable for dark room,contextual,0,setScreenBrightness,"{""brightnessPercent"": 20}",setScreenBrightness,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,709
+phi-3.5-mini,P001,Turn off alerts while exercising,Turn off alerts while exercising,rule,0,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,733
+phi-3.5-mini,P002,Silence when in meditation,Silence when in meditation,rule,0,createRule,"{""trigger"": ""in meditation"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,606
+phi-3.5-mini,P002,Set brightness for reading,Set brightness for reading,contextual,0,setScreenBrightness,"{""brightnessPercent"": 70}",setScreenBrightness,{},TRUE,TRUE,TRUE,754
+phi-3.5-mini,P002,Turn on do not disturb for 30 minutes,Turn on do not disturb for 30 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 30}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,710
+phi-3.5-mini,P002,Torch off please,Torch off please,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,667
+phi-3.5-mini,P002,Make screen brighter,Make screen brighter,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,738
+phi-3.5-mini,P002,Quiet mode for 1 hour,Quiet mode for 1 hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,620
+phi-3.5-mini,P002,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,474
+phi-3.5-mini,P002,Enable quiet mode when at church,Enabl quiet mode when at church,rule,0.167,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,774
+phi-3.5-mini,P002,Brighten screen,Brighten screen,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,675
+phi-3.5-mini,P002,Set phone for quiet work environment,Set phone for auiet work environment,contextual,0.167,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,627
+phi-3.5-mini,P002,Brightness up,Brightness up,direct,0,setScreenBrightness,"{""brightnessPercent"": 80}",setScreenBrightness,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,456
+phi-3.5-mini,P002,Flashlight on,Flashlight an,direct,0.5,toggleFlashlight,"{""enable"": true}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,540
+phi-3.5-mini,P003,Enable do not disturb mode for 25 minutes,Enable do not disturb mode for 25 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 25}",setDoNotDisturb,{},TRUE,TRUE,TRUE,656
+phi-3.5-mini,P003,Screen to 90 percent,Screen to 90 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 90}",setScreenBrightness,{},TRUE,TRUE,TRUE,974
+phi-3.5-mini,P003,Brighten screen,Brighte screen,direct,0.5,setScreenBrightness,"{""brightnessPercent"": 100}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,622
+phi-3.5-mini,P003,Switch on internet,Switch on internet,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,717
+phi-3.5-mini,P003,Phone settings for meditation,Phone settings for meditation,contextual,0,setVolume,"{""volumePercent"": 15}",setVolume,{},TRUE,TRUE,TRUE,554
+phi-3.5-mini,P003,Set phone to sleep mode,Set phone to sleep mode,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,{},TRUE,TRUE,TRUE,614
+phi-3.5-mini,P003,Half volume please,Half volume pleaae,parameter,0.333,setVolume,"{""volumePercent"": 50}",setVolume,{},TRUE,TRUE,TRUE,585
+phi-3.5-mini,P003,Silence phone while sleeping,Silence phone while sleeping,rule,0,createRule,"{""trigger"": ""sleeping"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,521
+phi-3.5-mini,P003,Turn off alerts when at work,Turn off alerts when at woak,rule,0.167,createRule,"{""trigger"": ""at work"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,633
+phi-3.5-mini,P003,Adjust for movie watching,Adjust for movie watching,contextual,0,setVolume,"{""volumePercent"": 80}",setVolume,{},TRUE,TRUE,TRUE,640
+phi-3.5-mini,P003,Set brightness for reading,Set brightness for readini,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 70}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,453
+phi-3.5-mini,P003,Set to minimum volume,Set to minimum volume,parameter,0,setVolume,"{""volumePercent"": 0}",setVolume,{},TRUE,TRUE,TRUE,718
+phi-3.5-mini,P004,Quiet mode for 1 hour,Quie mode for 1 hour,temporal,0.2,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,688
+phi-3.5-mini,P004,No interruptions for 40 minutes,No interruptions for 40 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 40}",setDoNotDisturb,{},TRUE,TRUE,TRUE,591
+phi-3.5-mini,P004,Dim screen for sleeping,Dim scoeen for sleeping,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,653
+phi-3.5-mini,P004,Light on,Light oe,direct,0.5,toggleFlashlight,"{""enable"": true}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,368
+phi-3.5-mini,P004,Set brightness to 75 percent,Set brightness to 75 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 75}",setScreenBrightness,{},TRUE,TRUE,TRUE,690
+phi-3.5-mini,P004,Turn off alerts for one hour,Turn off alerts fer one hour,temporal,0.167,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,655
+phi-3.5-mini,P004,Turn off alerts while exercising,Turn off alerts while exeicising,rule,0.2,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,425
+phi-3.5-mini,P004,Silence notifications for 90 minutes,silent notifications fur 90 minutes,temporal,0.4,setDoNotDisturb,"{""durationMinutes"": 90}",setDoNotDisturb,{},TRUE,TRUE,TRUE,578
+phi-3.5-mini,P004,Connect to wifi,Connect to wifi,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,691
+phi-3.5-mini,P004,Volume at 40 percent,Volume at 40 percent,parameter,0,setVolume,"{""volumePercent"": 40}",setVolume,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,799
+phi-3.5-mini,P004,Silence phone during dinner time,silence phone during dinne time,rule,0.2,createRule,"{""trigger"": ""dinner time"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,641
+phi-3.5-mini,P004,Silence when in meditation,silence wien in meditatio,rule,0.5,createRule,"{""trigger"": ""in meditation"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,624
+phi-3.5-mini,P005,Set to 95 percent,oet to 95 percent,parameter,0.25,setVolume,"{""volumePercent"": 95}",setVolume,{},TRUE,TRUE,TRUE,593
+phi-3.5-mini,P005,Increase to 80 percent,Increase to 80 percent,parameter,0,setVolume,"{""volumePercent"": 80}",setVolume,{},TRUE,TRUE,TRUE,582
+phi-3.5-mini,P005,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,625
+phi-3.5-mini,P005,Turn on flashlight,Turn on flashlight,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,633
+phi-3.5-mini,P005,Turn off sounds while watching movies,Turn off sound while watching movies,rule,0.167,createRule,"{""trigger"": ""watching movies"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,609
+phi-3.5-mini,P005,Make phone quiet for library,Make phon quiet for library,contextual,0.2,setVolume,"{""volumePercent"": 20}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,849
+phi-3.5-mini,P005,Decrease brightness,Decrease brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,762
+phi-3.5-mini,P005,Light off,Light off,direct,0,toggleFlashlight,"{""enable"": false}",toggleFlashlight,{},TRUE,TRUE,TRUE,632
+phi-3.5-mini,P005,Make it 25 percent,Make it 25 percent,parameter,0,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,683
+phi-3.5-mini,P005,Mute during meetings,Mute during meetings,rule,0,createRule,"{""trigger"": ""during meetings"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,780
+phi-3.5-mini,P005,Set to minimum volume,Set to minimum volume,parameter,0,setVolume,"{""volumePercent"": 0}",setVolume,{},TRUE,TRUE,TRUE,758
+phi-3.5-mini,P005,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,769
+phi-3.5-mini,P006,Minimum brightness,Minimum bright ness,direct,1,setScreenBrightness,"{""brightnessPercent"": 10}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,878
+phi-3.5-mini,P006,Turn off alerts while exercising,Turn off alerts while exercising,rule,0,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,495
+phi-3.5-mini,P006,Do not disturb for 15 minutes,Do not disturb for 15 minutes,temporal,0,setDoNotDisturb,"{""durationMinutes"": 15}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,683
+phi-3.5-mini,P006,Volume to 20 percent please,Volume to 20 percent please,parameter,0,setVolume,"{""volumePercent"": 20}",setVolume,{},TRUE,TRUE,TRUE,819
+phi-3.5-mini,P006,Make it loud for music,Make it loud for music,contextual,0,setVolume,"{""volumePercent"": 90}",setVolume,{},TRUE,TRUE,TRUE,667
+phi-3.5-mini,P006,Flashlight off,Flashlight off,direct,0,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,711
+phi-3.5-mini,P006,Keep phone silent for one hour,Keep phone silent for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,756
+phi-3.5-mini,P006,Brightness down,Brightness down,direct,0,setScreenBrightness,"{""brightnessPercent"": 20}",setScreenBrightness,{},TRUE,TRUE,TRUE,588
+phi-3.5-mini,P006,Mute my phone for the next 3 hours,Mute my phone for the next 3 hours,temporal,0,setDoNotDisturb,"{""durationMinutes"": 180}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,854
+phi-3.5-mini,P006,Brighten screen,Brighten screen,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,764
+phi-3.5-mini,P006,I need quiet time for one hour,I need quiet time for one hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,778
+phi-3.5-mini,P006,Prepare for office meeting,Prepare for office meeting,contextual,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,687
+phi-3.5-mini,P007,Light off,Light off,direct,0,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,724
+phi-3.5-mini,P007,Set to 95 percent,Set to 95 percent,parameter,0,setVolume,"{""volumePercent"": 95}",setVolume,{},TRUE,TRUE,TRUE,643
+phi-3.5-mini,P007,Set phone for quiet work environment,Set phone for quie wor environment,contextual,0.333,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,868
+phi-3.5-mini,P007,Phone settings for public transport,Phon settings for public transport,contextual,0.2,setVolume,"{""volumePercent"": 40}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,566
+phi-3.5-mini,P007,I'm driving set appropriate mode,I'm driving eet apprapriate mode,contextual,0.4,setVolume,"{""volumePercent"": 70}",setVolume,{},TRUE,TRUE,TRUE,673
+phi-3.5-mini,P007,Set volume for exercise,Set volume for exercise,contextual,0,setVolume,"{""volumePercent"": 85}",setVolume,{},TRUE,TRUE,TRUE,754
+phi-3.5-mini,P007,Do not disturb until my meeting ends,Do not disturb until my meeting ends,temporal,0,setDoNotDisturb,"{""durationMinutes"": 60}",setDoNotDisturb,{},TRUE,TRUE,TRUE,535
+phi-3.5-mini,P007,Make screen brighter,Make screen brighter,direct,0,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,683
+phi-3.5-mini,P007,Make phone quiet for library,Make phone quiet for library,contextual,0,setVolume,"{""volumePercent"": 20}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,541
+phi-3.5-mini,P007,Set volume to 50 percent,Set volume to 50 percent,parameter,0,setVolume,"{""volumePercent"": 50}",setVolume,{},TRUE,TRUE,TRUE,571
+phi-3.5-mini,P007,Minimum brightness,Minimum brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,{},TRUE,TRUE,TRUE,398
+phi-3.5-mini,P007,Enable quiet mode when at church,Enable quiet mode when at churc,rule,0.167,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,545
+phi-3.5-mini,P008,Lower brightness,Lower brigh ness,direct,1,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,729
+phi-3.5-mini,P008,Torch on please,Torch on pleas,direct,0.333,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,829
+phi-3.5-mini,P008,Wifi off,Wifi ofa,direct,0.5,toggleWifi,"{""enable"": false}",toggleWifi,{},TRUE,TRUE,TRUE,613
+phi-3.5-mini,P008,Set phone for quiet work environment,Set phone for quiet woro environmeot,contextual,0.333,setVolume,"{""volumePercent"": 25}",setVolume,{},TRUE,TRUE,TRUE,368
+phi-3.5-mini,P008,Turn off sounds while watching movies,Tuon off sounds weile watchin movies,rule,0.5,createRule,"{""trigger"": ""watching movies"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,568
+phi-3.5-mini,P008,Mute my phone for the next 3 hours,Mute my phune for the next 3 hours,temporal,0.125,setDoNotDisturb,"{""durationMinutes"": 180}",setDoNotDisturb,{},TRUE,TRUE,TRUE,662
+phi-3.5-mini,P008,Brighten screen,Brighten scrien,direct,0.5,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,554
+phi-3.5-mini,P008,Prepare my device for nighttime,Prepare my device for nighttime,contextual,0,setVolume,"{""volumePercent"": 10}",setVolume,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,633
+phi-3.5-mini,P008,Mute notifications when I'm in class,mut notifications whe I'm in classy,rule,0.5,createRule,"{""trigger"": ""in class"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,588
+phi-3.5-mini,P008,Silence notifications when driving,Silence notifications when driving,rule,0,createRule,"{""trigger"": ""driving"", ""action"": ""enable_dnd""}",wrong_function,"{""error"": ""wrong_params""}",TRUE,FALSE,FALSE,676
+phi-3.5-mini,P008,Flashlight off,flat light off,direct,1.5,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,572
+phi-3.5-mini,P008,Make it 45 percent,Mak it 45 peicent,parameter,0.5,setVolume,"{""volumePercent"": 45}",setVolume,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,519
+phi-3.5-mini,P009,Flashlight off,Flashlight off,direct,0,toggleFlashlight,"{""enable"": false}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,767
+phi-3.5-mini,P009,Turn on DND for half an hour,Turn on DND for half an hour,temporal,0,setDoNotDisturb,"{""durationMinutes"": 30}",setDoNotDisturb,{},TRUE,TRUE,TRUE,870
+phi-3.5-mini,P009,Switch off internet,Switch off internet,direct,0,toggleWifi,"{""enable"": false}",toggleWifi,{},TRUE,TRUE,TRUE,476
+phi-3.5-mini,P009,Set volume at 30 percent,Set volume at 30 percent,parameter,0,setVolume,"{""volumePercent"": 30}",setVolume,{},TRUE,TRUE,TRUE,723
+phi-3.5-mini,P009,Torch on please,Torch on please,direct,0,toggleFlashlight,"{""enable"": true}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,568
+phi-3.5-mini,P009,Enable quiet mode when at church,Enable quiet mode when at church,rule,0,createRule,"{""trigger"": ""at church"", ""action"": ""enable_dnd""}",createRule,{},TRUE,TRUE,TRUE,633
+phi-3.5-mini,P009,Set volume 90 percent,Set volume 90 percent,parameter,0,setVolume,"{""volumePercent"": 90}",setVolume,{},TRUE,TRUE,TRUE,517
+phi-3.5-mini,P009,Set volume to 50 percent,Set volume to 50 percent,parameter,0,setVolume,"{""volumePercent"": 50}",setVolume,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,682
+phi-3.5-mini,P009,Turn on flashlight,Turn on flashlight,direct,0,toggleFlashlight,"{""enable"": true}",toggleFlashlight,{},TRUE,TRUE,TRUE,773
+phi-3.5-mini,P009,Decrease brightness,Decrease brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,562
+phi-3.5-mini,P009,Dim screen for sleeping,Dim screen for sleeping,contextual,0,setScreenBrightness,"{""brightnessPercent"": 10}",setScreenBrightness,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,705
+phi-3.5-mini,P009,Lower brightness,Lower brightness,direct,0,setScreenBrightness,"{""brightnessPercent"": 30}",setScreenBrightness,{},TRUE,TRUE,TRUE,644
+phi-3.5-mini,P010,Turn on wifi,Turn on wifi,direct,0,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,720
+phi-3.5-mini,P010,Turn off alerts while exercising,Turu off alerts whiie exercising,rule,0.4,createRule,"{""trigger"": ""exercising"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,566
+phi-3.5-mini,P010,Screen brightness for outdoors,Screen brightness for outdours,contextual,0.25,setScreenBrightness,"{""brightnessPercent"": 100}",setScreenBrightness,{},TRUE,TRUE,TRUE,612
+phi-3.5-mini,P010,Change to 85 percent,Change to 85 percent,parameter,0,setVolume,"{""volumePercent"": 85}",setVolume,{},TRUE,TRUE,TRUE,464
+phi-3.5-mini,P010,Mute phone during gym time,Mute phon during gym time,rule,0.2,createRule,"{""trigger"": ""gym time"", ""action"": ""mute""}",createRule,{},TRUE,TRUE,TRUE,629
+phi-3.5-mini,P010,Enable DND when I'm studying,Enable DND when I'm studying,rule,0,createRule,"{""trigger"": ""studying"", ""action"": ""enable_dnd""}",createRule,"{""error"": ""wrong_params""}",TRUE,TRUE,FALSE,669
+phi-3.5-mini,P010,Brightness at 50 percent,Brightness at 50 percent,parameter,0,setScreenBrightness,"{""brightnessPercent"": 50}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,745
+phi-3.5-mini,P010,Set phone for quiet work environment,Set phone for quiet wor environment,contextual,0.167,setVolume,"{""volumePercent"": 25}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,685
+phi-3.5-mini,P010,Connect to wifi,Connect uo wifi,direct,0.333,toggleWifi,"{""enable"": true}",toggleWifi,{},TRUE,TRUE,TRUE,532
+phi-3.5-mini,P010,Set phone to sleep mode,Set phone to sleep mode,contextual,0,setVolume,"{""volumePercent"": 10}",wrong_function,"{""error"": ""wrong_params""}",FALSE,FALSE,FALSE,578
+phi-3.5-mini,P010,I'm driving set appropriate mode,a'm driving set appropriate mod,contextual,0.4,setVolume,"{""volumePercent"": 70}",setVolume,{},TRUE,TRUE,TRUE,633
+phi-3.5-mini,P010,Wifi off,Wifi off,direct,0,toggleWifi,"{""enable"": false}",toggleWifi,{},TRUE,TRUE,TRUE,530

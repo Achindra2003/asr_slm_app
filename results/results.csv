@@ -1,0 +1,101 @@
+command,category,tier,success,latency_ms,error
+Turn on flashlight,simple,fallback,TRUE,127,
+Turn off flashlight,simple,fallback,TRUE,158,
+Enable do not disturb,simple,fallback,TRUE,183,
+Set volume to 50,simple,fallback,TRUE,192,
+Set volume to maximum,simple,fallback,TRUE,238,
+Turn on torch,simple,fallback,TRUE,200,
+Disable flashlight,simple,fallback,TRUE,225,
+Mute my phone,simple,fallback,TRUE,164,
+Unmute notifications,simple,fallback,TRUE,114,
+Make it loud,simple,llm,TRUE,1032,
+Turn off torch,simple,fallback,TRUE,111,
+Enable DND,simple,fallback,TRUE,220,
+Set volume to 0,simple,fallback,TRUE,230,
+Turn light on,simple,fallback,FALSE,149,"LLM failed, keyword fallback failed"
+Set volume to 100,simple,fallback,TRUE,228,
+Silence my phone,simple,fallback,TRUE,118,
+Turn on light,simple,fallback,FALSE,236,"LLM failed, keyword fallback failed"
+Set volume low,simple,fallback,TRUE,173,
+Flash on,simple,fallback,TRUE,226,
+Volume medium,simple,fallback,TRUE,144,
+I need silence for 2 hours,temporal,fallback,TRUE,103,
+Turn on DND for 30 minutes,temporal,fallback,TRUE,197,
+Enable do not disturb for the next hour,temporal,fallback,TRUE,200,
+Mute notifications for 45 minutes,temporal,fallback,TRUE,210,
+I need quiet for the next 3 hours,temporal,fallback,TRUE,188,
+Silence phone for 90 minutes,temporal,fallback,TRUE,157,
+Enable DND for half an hour,temporal,fallback,TRUE,200,
+Keep phone silent for 15 minutes,temporal,fallback,FALSE,119,"LLM failed, keyword fallback failed"
+Turn on do not disturb for 1 hour,temporal,fallback,TRUE,209,
+I need focus time for 2 hours,temporal,fallback,FALSE,201,"LLM failed, keyword fallback failed"
+Mute for the next 20 minutes,temporal,fallback,TRUE,113,
+Silence notifications for an hour,temporal,fallback,TRUE,142,
+DND for 5 minutes,temporal,fallback,TRUE,196,
+I need peace for the next hour,temporal,fallback,FALSE,157,"LLM failed, keyword fallback failed"
+Keep quiet for 40 minutes,temporal,fallback,TRUE,134,
+Enable DND for 2.5 hours,temporal,fallback,TRUE,232,
+Silence for the next 10 minutes,temporal,fallback,TRUE,141,
+Mute phone for next 60 minutes,temporal,fallback,TRUE,216,
+Turn on DND for 75 minutes,temporal,fallback,TRUE,165,
+I want quiet for 1.5 hours,temporal,fallback,TRUE,168,
+Keep silent for 25 minutes,temporal,fallback,FALSE,133,"LLM failed, keyword fallback failed"
+DND for half hour,temporal,fallback,TRUE,183,
+Silence for 35 minutes,temporal,fallback,TRUE,247,
+Mute for 2 hours please,temporal,fallback,TRUE,227,
+I need silence for next 50 minutes,temporal,fallback,TRUE,151,
+Make my phone suitable for sleeping,contextual,fallback,FALSE,142,"LLM failed, keyword fallback failed"
+I'm going to bed,contextual,fallback,FALSE,151,"LLM failed, keyword fallback failed"
+Prepare phone for meeting,contextual,fallback,FALSE,121,"LLM failed, keyword fallback failed"
+I need focus for work,contextual,fallback,FALSE,226,"LLM failed, keyword fallback failed"
+Set volume for sleeping,contextual,fallback,TRUE,199,
+Make it quiet for studying,contextual,fallback,TRUE,177,
+Phone ready for cinema,contextual,fallback,FALSE,199,"LLM failed, keyword fallback failed"
+I'm in a library,contextual,fallback,FALSE,234,"LLM failed, keyword fallback failed"
+Prepare for meditation,contextual,fallback,FALSE,127,"LLM failed, keyword fallback failed"
+Set phone for gym workout,contextual,fallback,FALSE,136,"LLM failed, keyword fallback failed"
+I'm entering a quiet zone,contextual,fallback,TRUE,135,
+Make phone appropriate for hospital,contextual,fallback,FALSE,227,"LLM failed, keyword fallback failed"
+I'm starting yoga,contextual,fallback,FALSE,239,"LLM failed, keyword fallback failed"
+Set volume for driving,contextual,fallback,TRUE,144,
+Phone for bedtime,contextual,fallback,FALSE,145,"LLM failed, keyword fallback failed"
+I'm in class now,contextual,fallback,FALSE,235,"LLM failed, keyword fallback failed"
+Prepare for prayer,contextual,fallback,FALSE,229,"LLM failed, keyword fallback failed"
+Set phone for running,contextual,fallback,FALSE,106,"LLM failed, keyword fallback failed"
+I'm at the doctor,contextual,fallback,FALSE,225,"LLM failed, keyword fallback failed"
+Make phone quiet for reading,contextual,fallback,TRUE,226,
+I'm going to church,contextual,fallback,FALSE,152,"LLM failed, keyword fallback failed"
+Set volume for party,contextual,fallback,TRUE,241,
+Phone for exam hall,contextual,fallback,FALSE,191,"LLM failed, keyword fallback failed"
+I need concentration mode,contextual,fallback,FALSE,229,"LLM failed, keyword fallback failed"
+Set phone for theater,contextual,fallback,FALSE,206,"LLM failed, keyword fallback failed"
+Mute notifications when I'm in class,rule,fallback,TRUE,211,
+Enable DND when I'm sleeping,rule,fallback,TRUE,183,
+Silence phone when I'm studying,rule,fallback,TRUE,193,
+Turn on DND during meetings,rule,fallback,TRUE,209,
+Mute when I'm at the library,rule,fallback,TRUE,193,
+Enable do not disturb while driving,rule,fallback,TRUE,179,
+Silence notifications when at work,rule,fallback,TRUE,236,
+Turn on DND when I'm in cinema,rule,fallback,TRUE,232,
+Mute during meditation,rule,fallback,TRUE,176,
+Enable DND while exercising,rule,fallback,TRUE,177,
+Silence when I'm reading,rule,fallback,TRUE,142,
+Turn on DND during yoga,rule,fallback,TRUE,171,
+Mute when at hospital,rule,fallback,TRUE,246,
+Enable DND while praying,rule,fallback,TRUE,145,
+Silence during exam,rule,fallback,TRUE,162,
+Turn on DND when at church,rule,fallback,TRUE,233,
+Mute notifications while running,rule,fallback,TRUE,192,
+Enable DND during conference,rule,fallback,TRUE,246,
+Silence when watching movies,rule,fallback,TRUE,121,
+Turn on DND while napping,rule,fallback,TRUE,176,
+I want some peace,ambiguous,fallback,FALSE,179,"LLM failed, keyword fallback failed"
+Make it darker,ambiguous,fallback,FALSE,231,"LLM failed, keyword fallback failed"
+Adjust the sound,ambiguous,fallback,FALSE,221,"LLM failed, keyword fallback failed"
+Change phone mode,ambiguous,fallback,FALSE,104,"LLM failed, keyword fallback failed"
+I need quiet,ambiguous,fallback,TRUE,102,
+Fix the brightness,ambiguous,fallback,FALSE,212,"LLM failed, keyword fallback failed"
+Turn something on,ambiguous,fallback,FALSE,199,"LLM failed, keyword fallback failed"
+Make phone better,ambiguous,fallback,FALSE,206,"LLM failed, keyword fallback failed"
+I want silence,ambiguous,fallback,FALSE,183,"LLM failed, keyword fallback failed"
+Help me focus,ambiguous,fallback,FALSE,180,"LLM failed, keyword fallback failed"

@@ -24,7 +24,7 @@ android {
         applicationId = "com.example.my_agent_app"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        minSdk = 31  // Required by LEAP SDK
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
@@ -41,4 +41,9 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    // LEAP SDK for Liquid LFM models
+    implementation("ai.liquid.leap:leap-sdk:0.6.0")
 }

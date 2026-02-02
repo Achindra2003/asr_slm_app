@@ -43,3 +43,19 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Models (CRITICAL - DO NOT COMMIT LARGE FILES)
+*.gguf
+*.bin
+*.onnx
+models/
+
+# Android local config
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+
+# Research outputs (optional)
+#results/benchmark_results.csv
+#results/raw_data.json
