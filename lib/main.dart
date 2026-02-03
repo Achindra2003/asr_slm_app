@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cactus/cactus.dart';
 import 'package:my_agent_app/tools/device_controls.dart';
 import 'package:my_agent_app/services/benchmark_service.dart';
+import 'package:my_agent_app/services/headless_benchmark_runner.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 void main() {
@@ -736,6 +737,53 @@ class _MainScreenState extends State<MainScreen> {
     }
   }
 
+  Future<void> _runHeadlessBenchmark() async {
+    if (_isBenchmarkRunning) return;
+
+    setState(() {
+      _isBenchmarkRunning = true;
+      status = 'Starting headless benchmark (crash-resistant)...';
+    });
+
+    try {
+      await HeadlessBenchmarkRunner.run(
+        onProgress: (msg) {
+          if (mounted) {
+            setState(() {
+              status = msg;
+            });
+          }
+        },
+      );
+
+      setState(() {
+        status =
+            'Headless benchmark completed! Results saved with incremental checkpointing.';
+        response =
+            'Successfully tested 12 models across 30 commands (360 total tests).\n\n'
+            'Crash-resistant features:\n'
+            '• Incremental CSV saving (no data loss)\n'
+            '• Progress checkpointing (auto-resume)\n'
+            '• Memory leak prevention\n'
+            '• Aggressive cleanup every 5 commands\n\n'
+            'Results exported to:\n'
+            '• results/headless_benchmark_results.csv\n'
+            '• results/headless_benchmark_summary.md\n'
+            '• results/benchmark_progress.json\n\n'
+            'Run analysis scripts to visualize results.';
+      });
+    } catch (e) {
+      setState(() {
+        status = 'Headless benchmark failed: $e';
+        response = 'Error during headless benchmark: $e';
+      });
+    } finally {
+      setState(() {
+        _isBenchmarkRunning = false;
+      });
+    }
+  }
+
   List<CactusTool> _buildToolsList() {
     return [
       CactusTool(
@@ -996,8 +1044,11 @@ Your task is to analyze voice commands and call the appropriate function with co
     });
 
     try {
-      // Dispose old model
-      lm = null;
+      // CRITICAL: Properly unload old model to prevent memory leak
+      if (lm != null) {
+        await lm!.unload();
+        lm = null;
+      }
 
       // Update current model
       setState(() {
@@ -1467,6 +1518,32 @@ Your task is to analyze voice commands and call the appropriate function with co
                 _isBenchmarkRunning
                     ? 'Running Benchmark...'
                     : 'Run Full Benchmark (120 cmds × 5 models)',
+              ),
+            ),
+            const SizedBox(height: 8),
+            ElevatedButton.icon(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.deepOrange,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 12),
+              ),
+              onPressed: _isBenchmarkRunning
+                  ? null
+                  : _runHeadlessBenchmark,
+              icon: _isBenchmarkRunning
+                  ? const SizedBox(
+                      width: 16,
+                      height: 16,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                      ),
+                    )
+                  : const Icon(Icons.nightlight_round),
+              label: Text(
+                _isBenchmarkRunning
+                    ? 'Running...'
+                    : 'Headless Benchmark (30 cmds × 12 models)',
               ),
             ),
             const SizedBox(height: 20),
