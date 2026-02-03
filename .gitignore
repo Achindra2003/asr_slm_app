@@ -59,3 +59,11 @@ android/key.properties
 # Research outputs (optional)
 #results/benchmark_results.csv
 #results/raw_data.json
+
+# Documentation
+docs/
+
+# IDE settings (personal)
+.vscode/
+.idea/
+*.iml
